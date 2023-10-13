@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      maxHeight: {
+        '128': '32rem',
+      }
     },
   },
   plugins: [],
