@@ -4,26 +4,22 @@ import Image from "next/image";
 import moment from "moment";
 import {
     GiArcheryTarget,
-    GiBirdCage,
     GiClockwork,
     GiCrenelCrown,
     GiDeathNote,
-    GiHeadshot,
-    GiImprisoned,
     GiMultipleTargets,
     GiPoliceTarget,
-    GiPrisoner,
     GiRank3,
     GiReaperScythe,
     GiRelationshipBounds,
     GiSeaDragon,
-    GiSkills,
     GiSkullCrack,
     GiSkullShield,
     GiThreeFriends,
-    GiTimeBomb,
-    GiTrashCan
+    GiTimeBomb
 } from "react-icons/gi";
+import {BsGithub, BsLinkedin, BsTwitch} from "react-icons/bs";
+import {AiFillLinkedin} from "react-icons/ai";
 
 export default async function Home() {
 
@@ -104,10 +100,24 @@ export default async function Home() {
         <>
             {data ?
                 <>
-                    <a href="https://www.twitch.tv/arcanto" target="_blank">
-                        <Image className="mx-auto w-96 mt-5 mb-5" src={'/logo.png'} alt={'logo'} width={663}
-                               height={153}/>
-                    </a>
+                    <div className="flex justify-center">
+                        <a href="https://www.twitch.tv/arcanto" target="_blank">
+                            <Image className="w-96 mt-5 mb-5 block" src={'/logo.png'} alt={'logo'} width={663}
+                                   height={153}/>
+                        </a>
+                    </div>
+
+                    <div className="flex justify-center gap-5">
+                        <a href="https://github.com/imfarias/pickem-tracker" target="_blank">
+                            <BsGithub className="w-10 h-10"/>
+                        </a>
+                        <a href="https://www.twitch.tv/arcanto" target="_blank">
+                            <BsTwitch className="w-10 h-10"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/viniciusfbastos/" target="_blank">
+                            <BsLinkedin className="w-10 h-10"/>
+                        </a>
+                    </div>
 
                     <section className="">
                         <div className="py-8 px-4 mx-autoclassNamew-screen-xl sm:py-16 lg:px-6">
@@ -128,7 +138,7 @@ export default async function Home() {
                                 Informações do Evento
                             </h2>
 
-                            <div className="grid-cols-5 grid mt-10 gap-6">
+                            <div className="px-3 grid-cols-1 md:grid-cols-3 sm:grid-cols-1 lg:grid-cols-5 grid mt-10 gap-6">
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
@@ -172,7 +182,7 @@ export default async function Home() {
                                 Informações de Campeões
                             </h2>
 
-                            <div className="grid-cols-5 grid mt-10 gap-6">
+                            <div className="px-3 grid-cols-1 md:grid-cols-3 sm:grid-cols-1 lg:grid-cols-5 grid mt-10 gap-6">
 
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900">
                                     <div
@@ -267,7 +277,7 @@ export default async function Home() {
                                 Informações de Jogadores
                             </h2>
 
-                            <div className="grid-cols-5 grid mt-10 gap-6">
+                            <div className="px-3 grid-cols-1 md:grid-cols-3 sm:grid-cols-1 lg:grid-cols-5 grid mt-10 gap-6">
 
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900">
                                     <div
@@ -371,7 +381,7 @@ export default async function Home() {
                                 Informações de Equipes
                             </h2>
 
-                            <div className="grid-cols-5 grid mt-10 gap-6">
+                            <div className="px-3 grid-cols-1 md:grid-cols-3 sm:grid-cols-1 lg:grid-cols-5 grid mt-10 gap-6">
 
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900">
                                     <div
