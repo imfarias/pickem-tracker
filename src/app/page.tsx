@@ -126,7 +126,7 @@ export default async function Home() {
             (item: any) => {
                 switch (item.name) {
                     case 'clouds':
-                        item.name = 'Núvens';
+                        item.name = 'Nuvens';
                         break;
                     case 'infernals':
                         item.name = 'Infernal';
