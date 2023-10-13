@@ -304,7 +304,7 @@ export default async function Home() {
                                 <p className="text-gray-400 sm:classNamexl">
                                     Algumas seleções do bolão possuem 1º, 2º e 3º lugar, exemplo: (Qual será o Campeão
                                     mais escolhido durante a Seleção de Campeões do Mundial?), essas seleções possuem um
-                                    ícone ao lado da pontuação no site do lolesports.
+                                    ícone ao lado da pontuação no site para melhor identificação.
                                 </p>
                                 <p className="sm:classNamexl text-cyan-200">
                                     Data da última atualização: {moment(data.lastGameAdded).format("DD/MM/YYYY")}
