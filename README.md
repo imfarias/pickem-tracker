@@ -87,6 +87,4 @@ Se tiver alguma dúvida ou precisar de assistência com este projeto, sinta-se �
 
 Aproveite o uso do Projeto de Estatísticas do Campeonato Mundial de 2023 e mantenha-se atualizado sobre toda a ação emocionante que acontecerá no Worlds 2023!
 
-![Boa sorte para todas as equipes](good_luck.jpg)
-
 **Aviso:** Este projeto não é afiliado a nem endossado pela Riot Games ou pelo Campeonato Mundial de League of Legends. É um projeto independente criado para fins informativos e educacionais. Todo o conteúdo relacionado ao League of Legends e logotipos são propriedade da Riot Games.
