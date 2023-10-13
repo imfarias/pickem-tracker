@@ -147,9 +147,9 @@ export default async function Home() {
                                     {data.teamLongGame.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg">Time: {item.name}</p>
-                                                <p className="text-white text-lg">Duração da
-                                                    Partida: {moment().startOf('day')
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Time:</span> {item.name}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Duração da
+                                                    Partida:</span> {moment().startOf('day')
                                                         .seconds(item.info)
                                                         .format('HH:mm:ss')}</p>
                                             </div>
@@ -168,7 +168,7 @@ export default async function Home() {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
                                                 <p className="text-white text-lg">Dragão: {item.name}</p>
-                                                <p className="text-white text-lg">Quantidade: {item.info}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Quantidade:</span> {item.info}</p>
                                             </div>
                                         );
                                     })}
@@ -187,13 +187,13 @@ export default async function Home() {
                                         <GiPoliceTarget className="w-14 h-14 text-primary-300"/>
                                     </div>
                                     <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual será o
-                                        Campeão mais banido durante a Seleção de Campeões do Mundial?</h3>
+                                        <span className="font-bold text-cyan-500">Campeão:</span>mais banido durante a Seleção de Campeões do Mundial?</h3>
 
                                     {data.championBans.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg">Campeão: {item.name}</p>
-                                                <p className="text-white text-lg">Quantidade: {item.info}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Campeão:</span> {item.name}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Quantidade:</span> {item.info}</p>
                                             </div>
                                         );
                                     })}
@@ -204,13 +204,13 @@ export default async function Home() {
                                         <GiArcheryTarget className="w-14 h-14 text-primary-300"/>
                                     </div>
                                     <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual será o
-                                        Campeão mais escolhido durante a Seleção de Campeões do Mundial?</h3>
+                                        <span className="font-bold text-cyan-500">Campeão:</span>mais escolhido durante a Seleção de Campeões do Mundial?</h3>
 
                                     {data.championPicks.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg">Campeão: {item.name}</p>
-                                                <p className="text-white text-lg">Quantidade: {item.info}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Campeão:</span> {item.name}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Quantidade:</span> {item.info}</p>
                                             </div>
                                         );
                                     })}
@@ -221,14 +221,14 @@ export default async function Home() {
                                         <GiRelationshipBounds className="w-14 h-14 text-primary-300"/>
                                     </div>
                                     <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual será o
-                                        Campeão mais jogado em funções diferentes no Mundial?</h3>
+                                        <span className="font-bold text-cyan-500">Campeão:</span>mais jogado em funções diferentes no Mundial?</h3>
 
                                     {data.championPicksDiffRoles.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg">Campeão: {item.name}</p>
-                                                <p className="text-white text-lg">Quantidade de
-                                                    Roles: {item.quantityRoles}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Campeão:</span> {item.name}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Quantidade de
+                                                    Roles:</span> {item.quantityRoles}</p>
                                             </div>
                                         );
                                     })}
@@ -244,8 +244,8 @@ export default async function Home() {
                                     {data.championDeathCount.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg">Campeão: {item.name}</p>
-                                                <p className="text-white text-lg">Quantidade de Mortes: {item.info}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Campeão:</span> {item.name}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Quantidade de Mortes:</span> {item.info}</p>
                                             </div>
                                         );
                                     })}
@@ -261,9 +261,9 @@ export default async function Home() {
                                     {data.championWinRate.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg">Campeão: {item.name}</p>
-                                                <p className="text-white text-lg">Porcentagem de
-                                                    winrate: {item.winrate.toFixed(2)}%</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Campeão:</span> {item.name}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Porcentagem de
+                                                    winrate:</span> {item.winrate.toFixed(2)}%</p>
                                             </div>
                                         );
                                     })}
@@ -287,9 +287,9 @@ export default async function Home() {
                                     {data.playerDiffChampions.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg">Jogador: {item.name}</p>
-                                                <p className="text-white text-lg">Quantidade de Picks
-                                                    Diferentes: {item.championQuantity}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500"><span className="font-bold text-cyan-500">Jogador:</span></span> {item.name}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Quantidade de Picks
+                                                    Diferentes:</span> {item.championQuantity}</p>
                                             </div>
                                         );
                                     })}
@@ -307,8 +307,8 @@ export default async function Home() {
                                     {data.playerMostKills.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg">Jogador: {item.name}</p>
-                                                <p className="text-white text-lg">Quantidade de Kills: {item.info}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Jogador:</span> {item.name}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Quantidade de Kills:</span> {item.info}</p>
                                             </div>
                                         );
                                     })}
@@ -326,8 +326,8 @@ export default async function Home() {
                                     {data.playerKDA.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg">Jogador: {item.name}</p>
-                                                <p className="text-white text-lg">AMA: {item.ama.toFixed(2)}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Jogador:</span> {item.name}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">AMA:</span> {item.ama.toFixed(2)}</p>
                                             </div>
                                         );
                                     })}
@@ -345,9 +345,9 @@ export default async function Home() {
                                     {data.playerFirstBlood.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg">Jogador: {item.name}</p>
-                                                <p className="text-white text-lg">Quantidade de
-                                                    FirstBloods: {item.info}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Jogador:</span> {item.name}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Quantidade de
+                                                    FirstBloods:</span> {item.info}</p>
                                             </div>
                                         );
                                     })}
@@ -365,9 +365,9 @@ export default async function Home() {
                                     {data.pentaKillPlayers.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg">Jogador: {item.name}</p>
-                                                <p className="text-white text-lg">Quantidade de Penta
-                                                    Kills: {item.info}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Jogador:</span> {item.name}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Quantidade de Penta
+                                                    Kills:</span> {item.info}</p>
                                             </div>
                                         );
                                     })}
@@ -392,9 +392,9 @@ export default async function Home() {
                                     {data.teamFastGame.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg">Time: {item.name}</p>
-                                                <p className="text-white text-lg">Duração da
-                                                    Partida: {moment().startOf('day')
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Time:</span> {item.name}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Duração da
+                                                    Partida:</span> {moment().startOf('day')
                                                         .seconds(item.info)
                                                         .format('HH:mm:ss')}</p>
                                             </div>
@@ -414,9 +414,9 @@ export default async function Home() {
                                     {data.teamDifferentChampions.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg">Time: {item.name}</p>
-                                                <p className="text-white text-lg">Quantidade de Picks
-                                                    Diferentes: {item.championQuantity}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Time:</span> {item.name}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Quantidade de Picks
+                                                    Diferentes:</span> {item.championQuantity}</p>
                                             </div>
                                         );
                                     })}
