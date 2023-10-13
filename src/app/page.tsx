@@ -186,8 +186,7 @@ export default async function Home() {
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                         <GiPoliceTarget className="w-14 h-14 text-primary-300"/>
                                     </div>
-                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual será o
-                                        <span className="font-bold text-cyan-500">Campeão:</span>mais banido durante a Seleção de Campeões do Mundial?</h3>
+                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual será o Campeão mais banido durante a Seleção de Campeões do Mundial?</h3>
 
                                     {data.championBans.map((item: any, index: any) => {
                                         return (
@@ -204,7 +203,7 @@ export default async function Home() {
                                         <GiArcheryTarget className="w-14 h-14 text-primary-300"/>
                                     </div>
                                     <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual será o
-                                        <span className="font-bold text-cyan-500">Campeão:</span>mais escolhido durante a Seleção de Campeões do Mundial?</h3>
+                                        Campeão mais escolhido durante a Seleção de Campeões do Mundial?</h3>
 
                                     {data.championPicks.map((item: any, index: any) => {
                                         return (
@@ -221,7 +220,7 @@ export default async function Home() {
                                         <GiRelationshipBounds className="w-14 h-14 text-primary-300"/>
                                     </div>
                                     <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual será o
-                                        <span className="font-bold text-cyan-500">Campeão:</span>mais jogado em funções diferentes no Mundial?</h3>
+                                        Campeão mais jogado em funções diferentes no Mundial?</h3>
 
                                     {data.championPicksDiffRoles.map((item: any, index: any) => {
                                         return (
