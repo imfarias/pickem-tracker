@@ -254,19 +254,19 @@ export default async function Home() {
                                     className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all max-h-128 overflow-y-auto">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                        <GiPoliceTarget className="w-14 h-14 text-white"/>
+                                        <GiRelationshipBounds className="w-14 h-14 text-white"/>
                                     </div>
                                     <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">Qual será o
-                                        Campeão mais banido durante a Seleção de Campeões do Mundial?</h3>
+                                        Campeão mais jogado em funções diferentes no Mundial?</h3>
 
-                                    {data.championBans.map((item: any, index: any) => {
+                                    {data.championPicksDiffRoles.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
                                                 <p className="text-white text-lg"><span
                                                     className="font-bold text-cyan-500">Campeão:</span> {item.name}</p>
                                                 <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Quantidade:</span> {item.info}
-                                                </p>
+                                                    className="font-bold text-cyan-500">Quantidade de
+                                                    Roles:</span> {item.quantityRoles}</p>
                                             </div>
                                         );
                                     })}
@@ -296,19 +296,19 @@ export default async function Home() {
                                     className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all max-h-128 overflow-y-auto">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                        <GiRelationshipBounds className="w-14 h-14 text-white"/>
+                                        <GiPoliceTarget className="w-14 h-14 text-white"/>
                                     </div>
                                     <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">Qual será o
-                                        Campeão mais jogado em funções diferentes no Mundial?</h3>
+                                        Campeão mais banido durante a Seleção de Campeões do Mundial?</h3>
 
-                                    {data.championPicksDiffRoles.map((item: any, index: any) => {
+                                    {data.championBans.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
                                                 <p className="text-white text-lg"><span
                                                     className="font-bold text-cyan-500">Campeão:</span> {item.name}</p>
                                                 <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Quantidade de
-                                                    Roles:</span> {item.quantityRoles}</p>
+                                                    className="font-bold text-cyan-500">Quantidade:</span> {item.info}
+                                                </p>
                                             </div>
                                         );
                                     })}
