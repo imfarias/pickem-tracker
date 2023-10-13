@@ -72,7 +72,7 @@ export default class DataTreatment {
             const deaths = dataList[player].deaths;
             const assists = dataList[player].assists;
 
-            dataList[player].ama = (kills + assists / deaths);
+            dataList[player].ama = ((kills + assists) / deaths);
             dataList[player].name = player;
         }
 
