@@ -167,7 +167,7 @@ export default async function Home() {
                                     {data.drakesKilled.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg">Dragão: {item.name}</p>
+                                                <p className="text-white text-lg"><span className="font-bold text-cyan-500">Dragão:</span> {item.name}</p>
                                                 <p className="text-white text-lg"><span className="font-bold text-cyan-500">Quantidade:</span> {item.info}</p>
                                             </div>
                                         );
