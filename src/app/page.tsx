@@ -108,9 +108,6 @@ export default async function Home() {
                     </div>
 
                     <div className="flex justify-center gap-5">
-                        <a href="https://github.com/imfarias/pickem-tracker" target="_blank">
-                            <BsGithub className="w-10 h-10"/>
-                        </a>
                         <a href="https://www.twitch.tv/arcanto" target="_blank">
                             <BsTwitch className="w-10 h-10"/>
                         </a>
