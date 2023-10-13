@@ -119,14 +119,14 @@ export default async function Home() {
                     <section className="">
                         <div className="py-8 px-4 mx-autoclassNamew-screen-xl sm:py-16 lg:px-6">
                             <div className="max-w-screen-md mclassNameg:mb-16">
-                                <h2 className="mb-4 text-4xl traclassName-tight font-extrabold text-gray-900 dark:text-cyan-500 font-bold">
+                                <h2 className="mb-4 text-4xl traclassName-tight text-cyan-500 font-bold">
                                     Acompanhe os dados do bolão do mundial
                                 </h2>
-                                <p className="text-gray-500 sm:classNamexl dark:text-gray-300">
+                                <p className="text-gray-300 sm:classNamexl">
                                     Fique por dentro dos dados que estão mais em destaque durante as partidas do Worlds
                                     2023.
                                 </p>
-                                <p className="text-gray-500 sm:classNamexl dark:text-cyan-200">
+                                <p className="sm:classNamexl text-cyan-200">
                                     Data da última atualização: {moment(data.lastGameAdded).format("DD/MM/YYYY")}
                                 </p>
                             </div>
@@ -139,9 +139,9 @@ export default async function Home() {
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                        <GiClockwork className="w-14 h-14 text-primary-300"/>
+                                        <GiClockwork className="w-14 h-14 text-white"/>
                                     </div>
-                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual será a
+                                    <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">Qual será a
                                         duração da partida individual mais longa do Mundial?</h3>
 
                                     {data.teamLongGame.map((item: any, index: any) => {
@@ -159,9 +159,9 @@ export default async function Home() {
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                        <GiSeaDragon className="w-14 h-14 text-primary-300"/>
+                                        <GiSeaDragon className="w-14 h-14 text-white"/>
                                     </div>
-                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual Dragão
+                                    <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">Qual Dragão
                                         será mais abatido no Mundial?</h3>
 
                                     {data.drakesKilled.map((item: any, index: any) => {
@@ -184,9 +184,9 @@ export default async function Home() {
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                        <GiPoliceTarget className="w-14 h-14 text-primary-300"/>
+                                        <GiPoliceTarget className="w-14 h-14 text-white"/>
                                     </div>
-                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual será o Campeão mais banido durante a Seleção de Campeões do Mundial?</h3>
+                                    <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">Qual será o Campeão mais banido durante a Seleção de Campeões do Mundial?</h3>
 
                                     {data.championBans.map((item: any, index: any) => {
                                         return (
@@ -200,9 +200,9 @@ export default async function Home() {
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                        <GiArcheryTarget className="w-14 h-14 text-primary-300"/>
+                                        <GiArcheryTarget className="w-14 h-14 text-white"/>
                                     </div>
-                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual será o
+                                    <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">Qual será o
                                         Campeão mais escolhido durante a Seleção de Campeões do Mundial?</h3>
 
                                     {data.championPicks.map((item: any, index: any) => {
@@ -217,9 +217,9 @@ export default async function Home() {
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                        <GiRelationshipBounds className="w-14 h-14 text-primary-300"/>
+                                        <GiRelationshipBounds className="w-14 h-14 text-white"/>
                                     </div>
-                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual será o
+                                    <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">Qual será o
                                         Campeão mais jogado em funções diferentes no Mundial?</h3>
 
                                     {data.championPicksDiffRoles.map((item: any, index: any) => {
@@ -235,9 +235,9 @@ export default async function Home() {
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                        <GiReaperScythe className="w-14 h-14 text-primary-300"/>
+                                        <GiReaperScythe className="w-14 h-14 text-white"/>
                                     </div>
-                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Quem terá a
+                                    <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">Quem terá a
                                         maior quantidade de mortes no Mundial?</h3>
 
                                     {data.championDeathCount.map((item: any, index: any) => {
@@ -252,9 +252,9 @@ export default async function Home() {
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                        <GiCrenelCrown className="w-14 h-14 text-primary-300"/>
+                                        <GiCrenelCrown className="w-14 h-14 text-white"/>
                                     </div>
-                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Quem terá a
+                                    <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">Quem terá a
                                         maior taxa de vitórias no Mundial? (Mínimo de 5 partidas jogadas)</h3>
 
                                     {data.championWinRate.map((item: any, index: any) => {
@@ -278,9 +278,9 @@ export default async function Home() {
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                        <GiMultipleTargets className="w-14 h-14 text-primary-300"/>
+                                        <GiMultipleTargets className="w-14 h-14 text-white"/>
                                     </div>
-                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Quem jogará
+                                    <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">Quem jogará
                                         com mais Campeões diferentes no Mundial?</h3>
 
                                     {data.playerDiffChampions.map((item: any, index: any) => {
@@ -297,9 +297,9 @@ export default async function Home() {
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                        <GiDeathNote className="w-14 h-14 text-primary-300"/>
+                                        <GiDeathNote className="w-14 h-14 text-white"/>
                                     </div>
-                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">
+                                    <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">
                                         Quem conseguirá a maior quantidade de abates em uma única partida no Mundial?
                                     </h3>
 
@@ -316,9 +316,9 @@ export default async function Home() {
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                        <GiRank3 className="w-14 h-14 text-primary-300"/>
+                                        <GiRank3 className="w-14 h-14 text-white"/>
                                     </div>
-                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">
+                                    <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">
                                         Quem terá o maior AMA do Mundial?
                                     </h3>
 
@@ -335,9 +335,9 @@ export default async function Home() {
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                        <GiSkullCrack className="w-14 h-14 text-primary-300"/>
+                                        <GiSkullCrack className="w-14 h-14 text-white"/>
                                     </div>
-                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">
+                                    <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">
                                         Quem conseguirá a maior quantidade de First Bloods no Mundial?
                                     </h3>
 
@@ -355,9 +355,9 @@ export default async function Home() {
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                        <GiSkullShield className="w-14 h-14 text-primary-300"/>
+                                        <GiSkullShield className="w-14 h-14 text-white"/>
                                     </div>
-                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">
+                                    <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">
                                         Quem conseguirá pelo menos um Penta Kill no Mundial?
                                     </h3>
 
@@ -382,9 +382,9 @@ export default async function Home() {
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                        <GiTimeBomb className="w-14 h-14 text-primary-300"/>
+                                        <GiTimeBomb className="w-14 h-14 text-white"/>
                                     </div>
-                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">
+                                    <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">
                                         Que equipe sairá vitoriosa da partida mais curta do Mundial?
                                     </h3>
 
@@ -404,9 +404,9 @@ export default async function Home() {
                                 <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
-                                        <GiThreeFriends className="w-14 h-14 text-primary-300"/>
+                                        <GiThreeFriends className="w-14 h-14 text-white"/>
                                     </div>
-                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">
+                                    <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">
                                         Que equipe jogará com mais Campeões diferentes em Mundial?
                                     </h3>
 
