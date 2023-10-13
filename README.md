@@ -2,6 +2,14 @@
 
 ![Logo](public/logo-blue.png)
 
+## Acesso ao Sistema
+
+Para acessar o sistema de estatísticas do Campeonato Mundial de LoL 2023, clique no link abaixo:
+
+[**Acesse o Sistema de Estatísticas do Worlds 2023**](https://pickem-tracker.vercel.app/)
+
+Certifique-se de ter seguido as instruções de instalação e que o servidor esteja em execução conforme mencionado no README para desfrutar das estatísticas em tempo real e informações detalhadas sobre o Campeonato Mundial de 2023.
+
 ## Visão Geral
 
 Bem-vindo ao Projeto de Estatísticas do Campeonato Mundial de 2023! Este projeto foi criado para fornecer estatísticas e informações atualizadas sobre o Campeonato Mundial de League of Legends (LoL) de 2023. Como um dos eventos de eSports mais prestigiados do mundo, este torneio reúne as melhores equipes de LoL de todo o mundo para competir pelo título máximo. Este README o guiará pelo projeto, seus objetivos e como usá-lo.
