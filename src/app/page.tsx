@@ -31,21 +31,21 @@ export default async function Home() {
 
         let firstBan = data.championBans[0].info;
         let championBansList = data.championBans;
-        data.championBans = championBansList.filter((item: any) => item.info === firstBan).map(item => {
+        data.championBans = championBansList.filter((item: any) => item.info === firstBan).map((item: any) => {
             item.first = true
 
             return item;
         });
         let anotherChampionBansList = championBansList.filter((item: any) => item.info !== firstBan);
         let secondBan = anotherChampionBansList[0].info;
-        data.championBans = [...data.championBans, ...anotherChampionBansList.filter((item: any) => item.info === secondBan && item.info != firstBan).map(item => {
+        data.championBans = [...data.championBans, ...anotherChampionBansList.filter((item: any) => item.info === secondBan && item.info != firstBan).map((item: any) => {
             item.second = true
 
             return item;
         })]
         anotherChampionBansList = championBansList.filter((item: any) => item.info !== firstBan && item.info !== secondBan);
         let thirdBan = anotherChampionBansList[0].info;
-        data.championBans = [...data.championBans, ...anotherChampionBansList.filter((item: any) => item.info === thirdBan && item.info != firstBan && item.info != secondBan).map(item => {
+        data.championBans = [...data.championBans, ...anotherChampionBansList.filter((item: any) => item.info === thirdBan && item.info != firstBan && item.info != secondBan).map((item: any) => {
             item.third = true
 
             return item;
@@ -53,21 +53,21 @@ export default async function Home() {
 
         let firstPick = data.championPicks[0].info;
         let championPicksList = data.championPicks;
-        data.championPicks = championPicksList.filter((item: any) => item.info === firstPick).map(item => {
+        data.championPicks = championPicksList.filter((item: any) => item.info === firstPick).map((item: any) => {
             item.first = true
 
             return item;
         });
         let anotherChampionPicksList = championPicksList.filter((item: any) => item.info !== firstPick);
         let secondPick = anotherChampionPicksList[0].info;
-        data.championPicks = [...data.championPicks, ...anotherChampionPicksList.filter((item: any) => item.info === secondPick && item.info != firstPick).map(item => {
+        data.championPicks = [...data.championPicks, ...anotherChampionPicksList.filter((item: any) => item.info === secondPick && item.info != firstPick).map((item: any) => {
             item.second = true
 
             return item;
         })]
         anotherChampionPicksList = championPicksList.filter((item: any) => item.info !== firstPick && item.info !== secondPick);
         let thirdPick = anotherChampionPicksList[0].info;
-        data.championPicks = [...data.championPicks, ...anotherChampionPicksList.filter((item: any) => item.info === thirdPick && item.info != firstPick && item.info != secondPick).map(item => {
+        data.championPicks = [...data.championPicks, ...anotherChampionPicksList.filter((item: any) => item.info === thirdPick && item.info != firstPick && item.info != secondPick).map((item: any) => {
             item.third = true
 
             return item;
@@ -76,21 +76,21 @@ export default async function Home() {
         let championWinRatesList = data.championWinRate.filter((item: any) => item.quantityMatches >= 5);
         let firstWinRate = championWinRatesList[0].winrate;
 
-        data.championWinRate = championWinRatesList.filter((item: any) => item.winrate === firstWinRate).map(item => {
+        data.championWinRate = championWinRatesList.filter((item: any) => item.winrate === firstWinRate).map((item: any) => {
             item.first = true
 
             return item;
         });
         let anotherChampionWinRatesList = championWinRatesList.filter((item: any) => item.winrate !== firstWinRate);
         let secondWinRate = anotherChampionWinRatesList[0].winrate;
-        data.championWinRate = [...data.championWinRate, ...anotherChampionWinRatesList.filter((item: any) => item.winrate === secondWinRate && item.winrate != firstWinRate).map(item => {
+        data.championWinRate = [...data.championWinRate, ...anotherChampionWinRatesList.filter((item: any) => item.winrate === secondWinRate && item.winrate != firstWinRate).map((item: any) => {
             item.second = true
 
             return item;
         })]
         anotherChampionWinRatesList = championWinRatesList.filter((item: any) => item.winrate !== firstWinRate && item.winrate !== secondWinRate);
         let thirdWinRate = anotherChampionWinRatesList[0].winrate;
-        data.championWinRate = [...data.championWinRate, ...anotherChampionWinRatesList.filter((item: any) => item.winrate === thirdWinRate && item.winrate != firstWinRate && item.winrate != secondWinRate).map(item => {
+        data.championWinRate = [...data.championWinRate, ...anotherChampionWinRatesList.filter((item: any) => item.winrate === thirdWinRate && item.winrate != firstWinRate && item.winrate != secondWinRate).map((item: any) => {
             item.third = true
 
             return item;
@@ -101,21 +101,21 @@ export default async function Home() {
 
         let firstDeath = data.championDeathCount[0].info;
         let championDeathsList = data.championDeathCount;
-        data.championDeathCount = championDeathsList.filter((item: any) => item.info === firstDeath).map(item => {
+        data.championDeathCount = championDeathsList.filter((item: any) => item.info === firstDeath).map((item: any) => {
             item.first = true
 
             return item;
         });
         let anotherChampionDeathsList = championDeathsList.filter((item: any) => item.info !== firstDeath);
         let secondDeath = anotherChampionDeathsList[0].info;
-        data.championDeathCount = [...data.championDeathCount, ...anotherChampionDeathsList.filter((item: any) => item.info === secondDeath && item.info != firstDeath).map(item => {
+        data.championDeathCount = [...data.championDeathCount, ...anotherChampionDeathsList.filter((item: any) => item.info === secondDeath && item.info != firstDeath).map((item: any) => {
             item.second = true
 
             return item;
         })]
         anotherChampionDeathsList = championDeathsList.filter((item: any) => item.info !== firstDeath && item.info !== secondDeath);
         let thirdDeath = anotherChampionDeathsList[0].info;
-        data.championDeathCount = [...data.championDeathCount, ...anotherChampionDeathsList.filter((item: any) => item.info === thirdDeath && item.info != firstDeath && item.info != secondDeath).map(item => {
+        data.championDeathCount = [...data.championDeathCount, ...anotherChampionDeathsList.filter((item: any) => item.info === thirdDeath && item.info != firstDeath && item.info != secondDeath).map((item: any) => {
             item.third = true
 
             return item;
@@ -151,21 +151,21 @@ export default async function Home() {
 
         let firstKDA = data.playerKDA[0].ama;
         let playerKDAList = data.playerKDA;
-        data.playerKDA = playerKDAList.filter((item: any) => item.ama === firstKDA).map(item => {
+        data.playerKDA = playerKDAList.filter((item: any) => item.ama === firstKDA).map((item: any) => {
             item.first = true
 
             return item;
         });
         let anotherKDA = playerKDAList.filter((item: any) => item.ama !== firstKDA);
         let secondKDA = anotherKDA[0].ama
-        data.playerKDA = [...data.playerKDA, ...anotherKDA.filter((item: any) => item.ama === secondKDA && item.ama != firstKDA).map(item => {
+        data.playerKDA = [...data.playerKDA, ...anotherKDA.filter((item: any) => item.ama === secondKDA && item.ama != firstKDA).map((item: any) => {
             item.second = true
 
             return item;
         })]
         anotherKDA = playerKDAList.filter((item: any) => item.ama !== firstKDA && item.ama !== secondKDA);
         let thirdKDA = anotherKDA[0].ama
-        data.playerKDA = [...data.playerKDA, ...anotherKDA.filter((item: any) => item.ama === thirdKDA && item.ama != firstKDA && item.ama != secondKDA).map(item => {
+        data.playerKDA = [...data.playerKDA, ...anotherKDA.filter((item: any) => item.ama === thirdKDA && item.ama != firstKDA && item.ama != secondKDA).map((item: any) => {
             item.third = true
 
             return item;
@@ -173,21 +173,21 @@ export default async function Home() {
 
         let firstMostKill = data.playerMostKills[0].info;
         let playerMostKillList = data.playerMostKills;
-        data.playerMostKills = playerMostKillList.filter((item: any) => item.info === firstMostKill).map(item => {
+        data.playerMostKills = playerMostKillList.filter((item: any) => item.info === firstMostKill).map((item: any) => {
             item.first = true
 
             return item;
         });
         let anotherMostKill = playerMostKillList.filter((item: any) => item.info !== firstMostKill);
         let secondMostKill = anotherMostKill[0].info
-        data.playerMostKills = [...data.playerMostKills, ...anotherMostKill.filter((item: any) => item.info === secondMostKill && item.info != firstMostKill).map(item => {
+        data.playerMostKills = [...data.playerMostKills, ...anotherMostKill.filter((item: any) => item.info === secondMostKill && item.info != firstMostKill).map((item: any) => {
             item.second = true
 
             return item;
         })]
         anotherMostKill = playerMostKillList.filter((item: any) => item.info !== firstMostKill && item.info !== secondMostKill);
         let thirdMostKill = anotherMostKill[0].info
-        data.playerMostKills = [...data.playerMostKills, ...anotherMostKill.filter((item: any) => item.info === thirdMostKill && item.info != firstMostKill && item.info != secondMostKill).map(item => {
+        data.playerMostKills = [...data.playerMostKills, ...anotherMostKill.filter((item: any) => item.info === thirdMostKill && item.info != firstMostKill && item.info != secondMostKill).map((item: any) => {
             item.third = true
 
             return item;
@@ -195,21 +195,21 @@ export default async function Home() {
 
         let firstPlayerQuantity = data.playerDiffChampions[0].championQuantity;
         let playerDiffChampionList = data.playerDiffChampions;
-        data.playerDiffChampions = playerDiffChampionList.filter((item: any) => item.championQuantity === firstPlayerQuantity).map(item => {
+        data.playerDiffChampions = playerDiffChampionList.filter((item: any) => item.championQuantity === firstPlayerQuantity).map((item: any) => {
             item.first = true
 
             return item;
         });
         let anotherPlayerChampionDiffList = playerDiffChampionList.filter((item: any) => item.championQuantity !== firstPlayerQuantity);
         let secondPlayerQuantity = anotherPlayerChampionDiffList[0].championQuantity;
-        data.playerDiffChampions = [...data.playerDiffChampions, ...anotherPlayerChampionDiffList.filter((item: any) => item.championQuantity === secondPlayerQuantity && item.championQuantity != firstPlayerQuantity).map(item => {
+        data.playerDiffChampions = [...data.playerDiffChampions, ...anotherPlayerChampionDiffList.filter((item: any) => item.championQuantity === secondPlayerQuantity && item.championQuantity != firstPlayerQuantity).map((item: any) => {
             item.second = true
 
             return item;
         })]
         anotherPlayerChampionDiffList = playerDiffChampionList.filter((item: any) => item.championQuantity !== firstPlayerQuantity && item.championQuantity !== secondPlayerQuantity);
         let thirdPlayerQuantity = anotherPlayerChampionDiffList[0].championQuantity;
-        data.playerDiffChampions = [...data.playerDiffChampions, ...anotherPlayerChampionDiffList.filter((item: any) => item.championQuantity === thirdPlayerQuantity && item.championQuantity != firstPlayerQuantity && item.championQuantity != secondPlayerQuantity).map(item => {
+        data.playerDiffChampions = [...data.playerDiffChampions, ...anotherPlayerChampionDiffList.filter((item: any) => item.championQuantity === thirdPlayerQuantity && item.championQuantity != firstPlayerQuantity && item.championQuantity != secondPlayerQuantity).map((item: any) => {
             item.third = true
 
             return item;
@@ -217,14 +217,14 @@ export default async function Home() {
 
         let firstPlayerFirstBlood = data.playerFirstBlood[0].info;
         let playerFirstBloodList = data.playerFirstBlood;
-        data.playerFirstBlood = playerFirstBloodList.filter((item: any) => item.info === firstPlayerFirstBlood).map(item => {
+        data.playerFirstBlood = playerFirstBloodList.filter((item: any) => item.info === firstPlayerFirstBlood).map((item: any) => {
             item.first = true
 
             return item;
         });
         let anotherPlayerFirstBloodList = playerFirstBloodList.filter((item: any) => item.info !== firstPlayerFirstBlood);
         let secondPlayerFirstBlood = anotherPlayerFirstBloodList[0].info;
-        data.playerFirstBlood = [...data.playerFirstBlood, ...anotherPlayerFirstBloodList.filter((item: any) => item.info === secondPlayerFirstBlood && item.info != firstPlayerFirstBlood).map(item => {
+        data.playerFirstBlood = [...data.playerFirstBlood, ...anotherPlayerFirstBloodList.filter((item: any) => item.info === secondPlayerFirstBlood && item.info != firstPlayerFirstBlood).map((item: any) => {
             item.second = true
 
             return item;
@@ -233,7 +233,7 @@ export default async function Home() {
 
         if (anotherPlayerFirstBloodList.length) {
             let thirdPlayerFirstBlood = anotherPlayerFirstBloodList[0].info;
-            data.playerFirstBlood = [...data.playerFirstBlood, ...anotherPlayerFirstBloodList.filter((item: any) => item.info === thirdPlayerFirstBlood && item.info != firstPlayerFirstBlood && item.info != secondPlayerFirstBlood).map(item => {
+            data.playerFirstBlood = [...data.playerFirstBlood, ...anotherPlayerFirstBloodList.filter((item: any) => item.info === thirdPlayerFirstBlood && item.info != firstPlayerFirstBlood && item.info != secondPlayerFirstBlood).map((item: any) => {
                 item.third = true
 
                 return item;
@@ -249,21 +249,21 @@ export default async function Home() {
 
         let firstTeamQuantity = data.teamDifferentChampions[0].championQuantity;
         let teamDiffChampList = data.teamDifferentChampions;
-        data.teamDifferentChampions = teamDiffChampList.filter((item: any) => item.championQuantity === firstTeamQuantity).map(item => {
+        data.teamDifferentChampions = teamDiffChampList.filter((item: any) => item.championQuantity === firstTeamQuantity).map((item: any) => {
             item.first = true
 
             return item;
         });
         let anotherTeamDiffChampList = teamDiffChampList.filter((item: any) => item.championQuantity !== firstTeamQuantity);
         let secondTeamQuantity = anotherTeamDiffChampList[0].championQuantity;
-        data.teamDifferentChampions = [...data.teamDifferentChampions, ...anotherTeamDiffChampList.filter((item: any) => item.championQuantity === secondTeamQuantity && item.championQuantity != firstTeamQuantity).map(item => {
+        data.teamDifferentChampions = [...data.teamDifferentChampions, ...anotherTeamDiffChampList.filter((item: any) => item.championQuantity === secondTeamQuantity && item.championQuantity != firstTeamQuantity).map((item: any) => {
             item.second = true
 
             return item;
         })]
         anotherTeamDiffChampList = teamDiffChampList.filter((item: any) => item.championQuantity !== firstTeamQuantity && item.championQuantity !== secondTeamQuantity);
         let thirdTeamQuantity = anotherTeamDiffChampList[0].championQuantity;
-        data.teamDifferentChampions = [...data.teamDifferentChampions, ...anotherTeamDiffChampList.filter((item: any) => item.championQuantity === thirdTeamQuantity && item.championQuantity != firstTeamQuantity && item.championQuantity != secondTeamQuantity).map(item => {
+        data.teamDifferentChampions = [...data.teamDifferentChampions, ...anotherTeamDiffChampList.filter((item: any) => item.championQuantity === thirdTeamQuantity && item.championQuantity != firstTeamQuantity && item.championQuantity != secondTeamQuantity).map((item: any) => {
             item.third = true
 
             return item;
