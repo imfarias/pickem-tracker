@@ -19,6 +19,7 @@ import {
     GiTimeBomb
 } from "react-icons/gi";
 import {BsLinkedin, BsTwitch} from "react-icons/bs";
+import {TbRosetteNumber1, TbRosetteNumber2, TbRosetteNumber3} from "react-icons/tb";
 
 export default async function Home() {
 
@@ -30,40 +31,95 @@ export default async function Home() {
 
         let firstBan = data.championBans[0].info;
         let championBansList = data.championBans;
-        data.championBans = championBansList.filter((item: any) => item.info === firstBan);
+        data.championBans = championBansList.filter((item: any) => item.info === firstBan).map(item => {
+            item.first = true
+
+            return item;
+        });
         let anotherChampionBansList = championBansList.filter((item: any) => item.info !== firstBan);
         let secondBan = anotherChampionBansList[0].info;
-        data.championBans = [...data.championBans, ...anotherChampionBansList.filter((item: any) => item.info === secondBan && item.info != firstBan)]
+        data.championBans = [...data.championBans, ...anotherChampionBansList.filter((item: any) => item.info === secondBan && item.info != firstBan).map(item => {
+            item.second = true
+
+            return item;
+        })]
         anotherChampionBansList = championBansList.filter((item: any) => item.info !== firstBan && item.info !== secondBan);
         let thirdBan = anotherChampionBansList[0].info;
-        data.championBans = [...data.championBans, ...anotherChampionBansList.filter((item: any) => item.info === thirdBan && item.info != firstBan && item.info != secondBan)]
+        data.championBans = [...data.championBans, ...anotherChampionBansList.filter((item: any) => item.info === thirdBan && item.info != firstBan && item.info != secondBan).map(item => {
+            item.third = true
+
+            return item;
+        })]
 
         let firstPick = data.championPicks[0].info;
         let championPicksList = data.championPicks;
-        data.championPicks = championPicksList.filter((item: any) => item.info === firstPick);
+        data.championPicks = championPicksList.filter((item: any) => item.info === firstPick).map(item => {
+            item.first = true
+
+            return item;
+        });
         let anotherChampionPicksList = championPicksList.filter((item: any) => item.info !== firstPick);
         let secondPick = anotherChampionPicksList[0].info;
-        data.championPicks = [...data.championPicks, ...anotherChampionPicksList.filter((item: any) => item.info === secondPick && item.info != firstPick)]
+        data.championPicks = [...data.championPicks, ...anotherChampionPicksList.filter((item: any) => item.info === secondPick && item.info != firstPick).map(item => {
+            item.second = true
+
+            return item;
+        })]
         anotherChampionPicksList = championPicksList.filter((item: any) => item.info !== firstPick && item.info !== secondPick);
         let thirdPick = anotherChampionPicksList[0].info;
-        data.championPicks = [...data.championPicks, ...anotherChampionPicksList.filter((item: any) => item.info === thirdPick && item.info != firstPick && item.info != secondPick)]
+        data.championPicks = [...data.championPicks, ...anotherChampionPicksList.filter((item: any) => item.info === thirdPick && item.info != firstPick && item.info != secondPick).map(item => {
+            item.third = true
+
+            return item;
+        })]
 
         let championWinRatesList = data.championWinRate.filter((item: any) => item.quantityMatches >= 5);
         let firstWinRate = championWinRatesList[0].winrate;
 
-        data.championWinRate = championWinRatesList.filter((item: any) => item.winrate === firstWinRate);
+        data.championWinRate = championWinRatesList.filter((item: any) => item.winrate === firstWinRate).map(item => {
+            item.first = true
+
+            return item;
+        });
         let anotherChampionWinRatesList = championWinRatesList.filter((item: any) => item.winrate !== firstWinRate);
         let secondWinRate = anotherChampionWinRatesList[0].winrate;
-        data.championWinRate = [...data.championWinRate, ...anotherChampionWinRatesList.filter((item: any) => item.winrate === secondWinRate && item.winrate != firstWinRate)]
+        data.championWinRate = [...data.championWinRate, ...anotherChampionWinRatesList.filter((item: any) => item.winrate === secondWinRate && item.winrate != firstWinRate).map(item => {
+            item.second = true
+
+            return item;
+        })]
         anotherChampionWinRatesList = championWinRatesList.filter((item: any) => item.winrate !== firstWinRate && item.winrate !== secondWinRate);
         let thirdWinRate = anotherChampionWinRatesList[0].winrate;
-        data.championWinRate = [...data.championWinRate, ...anotherChampionWinRatesList.filter((item: any) => item.winrate === thirdWinRate && item.winrate != firstWinRate && item.winrate != secondWinRate)]
+        data.championWinRate = [...data.championWinRate, ...anotherChampionWinRatesList.filter((item: any) => item.winrate === thirdWinRate && item.winrate != firstWinRate && item.winrate != secondWinRate).map(item => {
+            item.third = true
+
+            return item;
+        })]
 
         const quantityRoles = data.championPicksDiffRoles[0].quantityRoles;
         data.championPicksDiffRoles = data.championPicksDiffRoles.filter((item: any) => item.quantityRoles === quantityRoles);
 
-        const quantityDeaths = data.championDeathCount[0].info;
-        data.championDeathCount = data.championDeathCount.filter((item: any) => item.info === quantityDeaths);
+        let firstDeath = data.championDeathCount[0].info;
+        let championDeathsList = data.championDeathCount;
+        data.championDeathCount = championDeathsList.filter((item: any) => item.info === firstDeath).map(item => {
+            item.first = true
+
+            return item;
+        });
+        let anotherChampionDeathsList = championDeathsList.filter((item: any) => item.info !== firstDeath);
+        let secondDeath = anotherChampionDeathsList[0].info;
+        data.championDeathCount = [...data.championDeathCount, ...anotherChampionDeathsList.filter((item: any) => item.info === secondDeath && item.info != firstDeath).map(item => {
+            item.second = true
+
+            return item;
+        })]
+        anotherChampionDeathsList = championDeathsList.filter((item: any) => item.info !== firstDeath && item.info !== secondDeath);
+        let thirdDeath = anotherChampionDeathsList[0].info;
+        data.championDeathCount = [...data.championDeathCount, ...anotherChampionDeathsList.filter((item: any) => item.info === thirdDeath && item.info != firstDeath && item.info != secondDeath).map(item => {
+            item.third = true
+
+            return item;
+        })]
 
         const drakesKilled = data.drakesKilled[0].info;
         data.drakesKilled = data.drakesKilled.filter((item: any) => item.info === drakesKilled).map(
@@ -95,45 +151,93 @@ export default async function Home() {
 
         let firstKDA = data.playerKDA[0].ama;
         let playerKDAList = data.playerKDA;
-        data.playerKDA = playerKDAList.filter((item: any) => item.ama === firstKDA);
+        data.playerKDA = playerKDAList.filter((item: any) => item.ama === firstKDA).map(item => {
+            item.first = true
+
+            return item;
+        });
         let anotherKDA = playerKDAList.filter((item: any) => item.ama !== firstKDA);
         let secondKDA = anotherKDA[0].ama
-        data.playerKDA = [...data.playerKDA, ...anotherKDA.filter((item: any) => item.ama === secondKDA && item.ama != firstKDA)]
+        data.playerKDA = [...data.playerKDA, ...anotherKDA.filter((item: any) => item.ama === secondKDA && item.ama != firstKDA).map(item => {
+            item.second = true
+
+            return item;
+        })]
         anotherKDA = playerKDAList.filter((item: any) => item.ama !== firstKDA && item.ama !== secondKDA);
         let thirdKDA = anotherKDA[0].ama
-        data.playerKDA = [...data.playerKDA, ...anotherKDA.filter((item: any) => item.ama === thirdKDA && item.ama != firstKDA && item.ama != secondKDA)]
+        data.playerKDA = [...data.playerKDA, ...anotherKDA.filter((item: any) => item.ama === thirdKDA && item.ama != firstKDA && item.ama != secondKDA).map(item => {
+            item.third = true
+
+            return item;
+        })]
 
         let firstMostKill = data.playerMostKills[0].info;
         let playerMostKillList = data.playerMostKills;
-        data.playerMostKills = playerMostKillList.filter((item: any) => item.info === firstMostKill);
+        data.playerMostKills = playerMostKillList.filter((item: any) => item.info === firstMostKill).map(item => {
+            item.first = true
+
+            return item;
+        });
         let anotherMostKill = playerMostKillList.filter((item: any) => item.info !== firstMostKill);
         let secondMostKill = anotherMostKill[0].info
-        data.playerMostKills = [...data.playerMostKills, ...anotherMostKill.filter((item: any) => item.info === secondMostKill && item.info != firstMostKill)]
+        data.playerMostKills = [...data.playerMostKills, ...anotherMostKill.filter((item: any) => item.info === secondMostKill && item.info != firstMostKill).map(item => {
+            item.second = true
+
+            return item;
+        })]
         anotherMostKill = playerMostKillList.filter((item: any) => item.info !== firstMostKill && item.info !== secondMostKill);
         let thirdMostKill = anotherMostKill[0].info
-        data.playerMostKills = [...data.playerMostKills, ...anotherMostKill.filter((item: any) => item.info === thirdMostKill && item.info != firstMostKill && item.info != secondMostKill)]
+        data.playerMostKills = [...data.playerMostKills, ...anotherMostKill.filter((item: any) => item.info === thirdMostKill && item.info != firstMostKill && item.info != secondMostKill).map(item => {
+            item.third = true
+
+            return item;
+        })]
 
         let firstPlayerQuantity = data.playerDiffChampions[0].championQuantity;
         let playerDiffChampionList = data.playerDiffChampions;
-        data.playerDiffChampions = playerDiffChampionList.filter((item: any) => item.championQuantity === firstPlayerQuantity);
+        data.playerDiffChampions = playerDiffChampionList.filter((item: any) => item.championQuantity === firstPlayerQuantity).map(item => {
+            item.first = true
+
+            return item;
+        });
         let anotherPlayerChampionDiffList = playerDiffChampionList.filter((item: any) => item.championQuantity !== firstPlayerQuantity);
         let secondPlayerQuantity = anotherPlayerChampionDiffList[0].championQuantity;
-        data.playerDiffChampions = [...data.playerDiffChampions, ...anotherPlayerChampionDiffList.filter((item: any) => item.championQuantity === secondPlayerQuantity && item.championQuantity != firstPlayerQuantity)]
+        data.playerDiffChampions = [...data.playerDiffChampions, ...anotherPlayerChampionDiffList.filter((item: any) => item.championQuantity === secondPlayerQuantity && item.championQuantity != firstPlayerQuantity).map(item => {
+            item.second = true
+
+            return item;
+        })]
         anotherPlayerChampionDiffList = playerDiffChampionList.filter((item: any) => item.championQuantity !== firstPlayerQuantity && item.championQuantity !== secondPlayerQuantity);
         let thirdPlayerQuantity = anotherPlayerChampionDiffList[0].championQuantity;
-        data.playerDiffChampions = [...data.playerDiffChampions, ...anotherPlayerChampionDiffList.filter((item: any) => item.championQuantity === thirdPlayerQuantity && item.championQuantity != firstPlayerQuantity && item.championQuantity != secondPlayerQuantity)]
+        data.playerDiffChampions = [...data.playerDiffChampions, ...anotherPlayerChampionDiffList.filter((item: any) => item.championQuantity === thirdPlayerQuantity && item.championQuantity != firstPlayerQuantity && item.championQuantity != secondPlayerQuantity).map(item => {
+            item.third = true
+
+            return item;
+        })]
 
         let firstPlayerFirstBlood = data.playerFirstBlood[0].info;
         let playerFirstBloodList = data.playerFirstBlood;
-        data.playerFirstBlood = playerFirstBloodList.filter((item: any) => item.info === firstPlayerFirstBlood);
+        data.playerFirstBlood = playerFirstBloodList.filter((item: any) => item.info === firstPlayerFirstBlood).map(item => {
+            item.first = true
+
+            return item;
+        });
         let anotherPlayerFirstBloodList = playerFirstBloodList.filter((item: any) => item.info !== firstPlayerFirstBlood);
         let secondPlayerFirstBlood = anotherPlayerFirstBloodList[0].info;
-        data.playerFirstBlood = [...data.playerFirstBlood, ...anotherPlayerFirstBloodList.filter((item: any) => item.info === secondPlayerFirstBlood && item.info != firstPlayerFirstBlood)]
+        data.playerFirstBlood = [...data.playerFirstBlood, ...anotherPlayerFirstBloodList.filter((item: any) => item.info === secondPlayerFirstBlood && item.info != firstPlayerFirstBlood).map(item => {
+            item.second = true
+
+            return item;
+        })]
         anotherPlayerFirstBloodList = playerFirstBloodList.filter((item: any) => item.info !== firstPlayerFirstBlood && item.info !== secondPlayerFirstBlood);
 
         if (anotherPlayerFirstBloodList.length) {
             let thirdPlayerFirstBlood = anotherPlayerFirstBloodList[0].info;
-            data.playerFirstBlood = [...data.playerFirstBlood, ...anotherPlayerFirstBloodList.filter((item: any) => item.info === thirdPlayerFirstBlood && item.info != firstPlayerFirstBlood && item.info != secondPlayerFirstBlood)]
+            data.playerFirstBlood = [...data.playerFirstBlood, ...anotherPlayerFirstBloodList.filter((item: any) => item.info === thirdPlayerFirstBlood && item.info != firstPlayerFirstBlood && item.info != secondPlayerFirstBlood).map(item => {
+                item.third = true
+
+                return item;
+            })]
         }
 
         const teamFastGame = data.teamFastGame[0].info;
@@ -143,16 +247,27 @@ export default async function Home() {
         data.teamLongGame = data.teamLongGame.filter((item: any) => item.info === teamLongGame);
 
 
-
         let firstTeamQuantity = data.teamDifferentChampions[0].championQuantity;
         let teamDiffChampList = data.teamDifferentChampions;
-        data.teamDifferentChampions = teamDiffChampList.filter((item: any) => item.championQuantity === firstTeamQuantity);
+        data.teamDifferentChampions = teamDiffChampList.filter((item: any) => item.championQuantity === firstTeamQuantity).map(item => {
+            item.first = true
+
+            return item;
+        });
         let anotherTeamDiffChampList = teamDiffChampList.filter((item: any) => item.championQuantity !== firstTeamQuantity);
         let secondTeamQuantity = anotherTeamDiffChampList[0].championQuantity;
-        data.teamDifferentChampions = [...data.teamDifferentChampions, ...anotherTeamDiffChampList.filter((item: any) => item.championQuantity === secondTeamQuantity && item.championQuantity != firstTeamQuantity)]
+        data.teamDifferentChampions = [...data.teamDifferentChampions, ...anotherTeamDiffChampList.filter((item: any) => item.championQuantity === secondTeamQuantity && item.championQuantity != firstTeamQuantity).map(item => {
+            item.second = true
+
+            return item;
+        })]
         anotherTeamDiffChampList = teamDiffChampList.filter((item: any) => item.championQuantity !== firstTeamQuantity && item.championQuantity !== secondTeamQuantity);
         let thirdTeamQuantity = anotherTeamDiffChampList[0].championQuantity;
-        data.teamDifferentChampions = [...data.teamDifferentChampions, ...anotherTeamDiffChampList.filter((item: any) => item.championQuantity === thirdTeamQuantity && item.championQuantity != firstTeamQuantity && item.championQuantity != secondTeamQuantity)]
+        data.teamDifferentChampions = [...data.teamDifferentChampions, ...anotherTeamDiffChampList.filter((item: any) => item.championQuantity === thirdTeamQuantity && item.championQuantity != firstTeamQuantity && item.championQuantity != secondTeamQuantity).map(item => {
+            item.third = true
+
+            return item;
+        })]
 
     }
 
@@ -187,7 +302,9 @@ export default async function Home() {
                                     2023.
                                 </p>
                                 <p className="text-gray-400 sm:classNamexl">
-                                    Algumas seleções do bolão possuem 1º, 2º e 3º lugar, exemplo: (Qual será o Campeão mais escolhido durante a Seleção de Campeões do Mundial?), essas seleções possuem um ícone ao lado da pontuação no site do lolesports.
+                                    Algumas seleções do bolão possuem 1º, 2º e 3º lugar, exemplo: (Qual será o Campeão
+                                    mais escolhido durante a Seleção de Campeões do Mundial?), essas seleções possuem um
+                                    ícone ao lado da pontuação no site do lolesports.
                                 </p>
                                 <p className="sm:classNamexl text-cyan-200">
                                     Data da última atualização: {moment(data.lastGameAdded).format("DD/MM/YYYY")}
@@ -286,11 +403,24 @@ export default async function Home() {
                                     {data.championPicks.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Campeão:</span> {item.name}</p>
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Quantidade:</span> {item.info}
-                                                </p>
+                                                <div className="flex items-center">
+                                                    <div className="mr-3">
+                                                        {item.first ? <TbRosetteNumber1
+                                                            className="text-yellow-400 w-10 h-10"></TbRosetteNumber1> : <></>}
+                                                        {item.second ? <TbRosetteNumber2
+                                                            className="text-gray-400 w-10 h-10"></TbRosetteNumber2> : <></>}
+                                                        {item.third ? <TbRosetteNumber3
+                                                            className="text-amber-800 w-10 h-10"></TbRosetteNumber3> : <></>}
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Campeão:</span> {item.name}
+                                                        </p>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Quantidade:</span> {item.info}
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         );
                                     })}
@@ -307,11 +437,24 @@ export default async function Home() {
                                     {data.championBans.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Campeão:</span> {item.name}</p>
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Quantidade:</span> {item.info}
-                                                </p>
+                                                <div className="flex items-center">
+                                                    <div className="mr-3">
+                                                        {item.first ? <TbRosetteNumber1
+                                                            className="text-yellow-400 w-10 h-10"></TbRosetteNumber1> : <></>}
+                                                        {item.second ? <TbRosetteNumber2
+                                                            className="text-gray-400 w-10 h-10"></TbRosetteNumber2> : <></>}
+                                                        {item.third ? <TbRosetteNumber3
+                                                            className="text-amber-800 w-10 h-10"></TbRosetteNumber3> : <></>}
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Campeão:</span> {item.name}
+                                                        </p>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Quantidade:</span> {item.info}
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         );
                                     })}
@@ -328,11 +471,24 @@ export default async function Home() {
                                     {data.championDeathCount.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Campeão:</span> {item.name}</p>
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Quantidade de Mortes:</span> {item.info}
-                                                </p>
+                                                <div className="flex items-center">
+                                                    <div className="mr-3">
+                                                        {item.first ? <TbRosetteNumber1
+                                                            className="text-yellow-400 w-10 h-10"></TbRosetteNumber1> : <></>}
+                                                        {item.second ? <TbRosetteNumber2
+                                                            className="text-gray-400 w-10 h-10"></TbRosetteNumber2> : <></>}
+                                                        {item.third ? <TbRosetteNumber3
+                                                            className="text-amber-800 w-10 h-10"></TbRosetteNumber3> : <></>}
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Campeão:</span> {item.name}
+                                                        </p>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Quantidade de Mortes:</span> {item.info}
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         );
                                     })}
@@ -349,11 +505,24 @@ export default async function Home() {
                                     {data.championWinRate.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Campeão:</span> {item.name}</p>
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Porcentagem de
+                                                <div className="flex items-center">
+                                                    <div className="mr-3">
+                                                        {item.first ? <TbRosetteNumber1
+                                                            className="text-yellow-400 w-10 h-10"></TbRosetteNumber1> : <></>}
+                                                        {item.second ? <TbRosetteNumber2
+                                                            className="text-gray-400 w-10 h-10"></TbRosetteNumber2> : <></>}
+                                                        {item.third ? <TbRosetteNumber3
+                                                            className="text-amber-800 w-10 h-10"></TbRosetteNumber3> : <></>}
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Campeão:</span> {item.name}
+                                                        </p>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Porcentagem de
                                                     winrate:</span> {item.winrate.toFixed(2)}%</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         );
                                     })}
@@ -379,13 +548,25 @@ export default async function Home() {
                                     {data.playerDiffChampions.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500"><span
-                                                    className="font-bold text-cyan-500">Jogador:</span></span> {item.name}
-                                                </p>
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Quantidade de Picks
+                                                <div className="flex items-center">
+                                                    <div className="mr-3">
+                                                        {item.first ? <TbRosetteNumber1
+                                                            className="text-yellow-400 w-10 h-10"></TbRosetteNumber1> : <></>}
+                                                        {item.second ? <TbRosetteNumber2
+                                                            className="text-gray-400 w-10 h-10"></TbRosetteNumber2> : <></>}
+                                                        {item.third ? <TbRosetteNumber3
+                                                            className="text-amber-800 w-10 h-10"></TbRosetteNumber3> : <></>}
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500"><span
+                                                            className="font-bold text-cyan-500">Jogador:</span></span> {item.name}
+                                                        </p>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Quantidade de Picks
                                                     Diferentes:</span> {item.championQuantity}</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         );
                                     })}
@@ -404,11 +585,24 @@ export default async function Home() {
                                     {data.playerMostKills.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Jogador:</span> {item.name}</p>
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Quantidade de Kills:</span> {item.info}
-                                                </p>
+                                                <div className="flex items-center">
+                                                    <div className="mr-3">
+                                                        {item.first ? <TbRosetteNumber1
+                                                            className="text-yellow-400 w-10 h-10"></TbRosetteNumber1> : <></>}
+                                                        {item.second ? <TbRosetteNumber2
+                                                            className="text-gray-400 w-10 h-10"></TbRosetteNumber2> : <></>}
+                                                        {item.third ? <TbRosetteNumber3
+                                                            className="text-amber-800 w-10 h-10"></TbRosetteNumber3> : <></>}
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Jogador:</span> {item.name}
+                                                        </p>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Quantidade de Kills:</span> {item.info}
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         );
                                     })}
@@ -427,11 +621,24 @@ export default async function Home() {
                                     {data.playerKDA.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Jogador:</span> {item.name}</p>
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">AMA:</span> {item.ama.toFixed(2)}
-                                                </p>
+                                                <div className="flex items-center">
+                                                    <div className="mr-3">
+                                                        {item.first ? <TbRosetteNumber1
+                                                            className="text-yellow-400 w-10 h-10"></TbRosetteNumber1> : <></>}
+                                                        {item.second ? <TbRosetteNumber2
+                                                            className="text-gray-400 w-10 h-10"></TbRosetteNumber2> : <></>}
+                                                        {item.third ? <TbRosetteNumber3
+                                                            className="text-amber-800 w-10 h-10"></TbRosetteNumber3> : <></>}
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Jogador:</span> {item.name}
+                                                        </p>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">AMA:</span> {item.ama.toFixed(2)}
+                                                        </p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         );
                                     })}
@@ -450,11 +657,24 @@ export default async function Home() {
                                     {data.playerFirstBlood.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Jogador:</span> {item.name}</p>
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Quantidade de
+                                                <div className="flex items-center">
+                                                    <div className="mr-3">
+                                                        {item.first ? <TbRosetteNumber1
+                                                            className="text-yellow-400 w-10 h-10"></TbRosetteNumber1> : <></>}
+                                                        {item.second ? <TbRosetteNumber2
+                                                            className="text-gray-400 w-10 h-10"></TbRosetteNumber2> : <></>}
+                                                        {item.third ? <TbRosetteNumber3
+                                                            className="text-amber-800 w-10 h-10"></TbRosetteNumber3> : <></>}
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Jogador:</span> {item.name}
+                                                        </p>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Quantidade de
                                                     FirstBloods:</span> {item.info}</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         );
                                     })}
@@ -504,13 +724,26 @@ export default async function Home() {
                                     {data.teamFastGame.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Time:</span> {item.name}</p>
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Duração da
+                                                <div className="flex items-center">
+                                                    <div className="mr-3">
+                                                        {item.first ? <TbRosetteNumber1
+                                                            className="text-yellow-400 w-10 h-10"></TbRosetteNumber1> : <></>}
+                                                        {item.second ? <TbRosetteNumber2
+                                                            className="text-gray-400 w-10 h-10"></TbRosetteNumber2> : <></>}
+                                                        {item.third ? <TbRosetteNumber3
+                                                            className="text-amber-800 w-10 h-10"></TbRosetteNumber3> : <></>}
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Time:</span> {item.name}
+                                                        </p>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Duração da
                                                     Partida:</span> {moment().startOf('day')
-                                                    .seconds(item.info)
-                                                    .format('HH:mm:ss')}</p>
+                                                            .seconds(item.info)
+                                                            .format('HH:mm:ss')}</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         );
                                     })}
@@ -529,11 +762,24 @@ export default async function Home() {
                                     {data.teamDifferentChampions.map((item: any, index: any) => {
                                         return (
                                             <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Time:</span> {item.name}</p>
-                                                <p className="text-white text-lg"><span
-                                                    className="font-bold text-cyan-500">Quantidade de Picks
+                                                <div className="flex items-center">
+                                                    <div className="mr-3">
+                                                        {item.first ? <TbRosetteNumber1
+                                                            className="text-yellow-400 w-10 h-10"></TbRosetteNumber1> : <></>}
+                                                        {item.second ? <TbRosetteNumber2
+                                                            className="text-gray-400 w-10 h-10"></TbRosetteNumber2> : <></>}
+                                                        {item.third ? <TbRosetteNumber3
+                                                            className="text-amber-800 w-10 h-10"></TbRosetteNumber3> : <></>}
+                                                    </div>
+                                                    <div>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Time:</span> {item.name}
+                                                        </p>
+                                                        <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Quantidade de Picks
                                                     Diferentes:</span> {item.championQuantity}</p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         );
                                     })}
