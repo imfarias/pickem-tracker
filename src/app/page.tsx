@@ -109,10 +109,10 @@ export default async function Home() {
 
                     <div className="flex justify-center gap-5">
                         <a href="https://www.twitch.tv/arcanto" target="_blank">
-                            <BsTwitch className="w-10 h-10 hover:text-cyan-500 transition-all"/>
+                            <BsTwitch className="w-10 h-10 text-white hover:text-cyan-500 transition-all"/>
                         </a>
                         <a href="https://www.linkedin.com/in/viniciusfbastos/" target="_blank">
-                            <BsLinkedin className="w-10 h-10 hover:text-cyan-500 transition-all"/>
+                            <BsLinkedin className="w-10 h-10 text-white hover:text-cyan-500 transition-all"/>
                         </a>
                     </div>
 
