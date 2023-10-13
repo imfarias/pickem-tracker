@@ -1,113 +1,425 @@
-import Image from 'next/image'
+import fs from "fs";
+import DataTreatment from "@/app/api/generate-json/data-treatment";
+import Image from "next/image";
+import moment from "moment";
+import {
+    GiArcheryTarget,
+    GiBirdCage,
+    GiClockwork,
+    GiCrenelCrown,
+    GiDeathNote,
+    GiHeadshot,
+    GiImprisoned,
+    GiMultipleTargets,
+    GiPoliceTarget,
+    GiPrisoner,
+    GiRank3,
+    GiReaperScythe,
+    GiRelationshipBounds,
+    GiSeaDragon,
+    GiSkills,
+    GiSkullCrack,
+    GiSkullShield,
+    GiThreeFriends,
+    GiTimeBomb,
+    GiTrashCan
+} from "react-icons/gi";
 
-export default function Home() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+export default async function Home() {
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+    let data: any = null;
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+    if (fs.existsSync("public/data.json")) {
+        const file = fs.readFileSync('public/data.json', {encoding: 'utf8'});
+        data = DataTreatment.generateDataToView(JSON.parse(file));
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+        const highestBan = data.championBans[0].info;
+        data.championBans = data.championBans.filter((item: any) => item.info === highestBan);
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
+        const highestPick = data.championPicks[0].info;
+        data.championPicks = data.championPicks.filter((item: any) => item.info === highestPick);
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+        data.championWinRate = data.championWinRate.filter((item: any) => item.quantityMatches >= 5);
+        const highestWinrate = data.championWinRate[0].winrate;
+        data.championWinRate = data.championWinRate.filter((item: any) => item.winrate === highestWinrate);
+
+        const quantityRoles = data.championPicksDiffRoles[0].quantityRoles;
+        data.championPicksDiffRoles = data.championPicksDiffRoles.filter((item: any) => item.quantityRoles === quantityRoles);
+
+        const quantityDeaths = data.championDeathCount[0].info;
+        data.championDeathCount = data.championDeathCount.filter((item: any) => item.info === quantityDeaths);
+
+        const drakesKilled = data.drakesKilled[0].info;
+        data.drakesKilled = data.drakesKilled.filter((item: any) => item.info === drakesKilled).map(
+            (item: any) => {
+                switch (item.name) {
+                    case 'clouds':
+                        item.name = 'Núvens';
+                        break;
+                    case 'infernals':
+                        item.name = 'Infernal';
+                        break;
+                    case 'mountains':
+                        item.name = 'Montanha';
+                        break;
+                    case 'oceans':
+                        item.name = 'Oceano';
+                        break;
+                    case 'chemtechs':
+                        item.name = 'Quimtec';
+                        break;
+                    case 'hextechs':
+                        item.name = 'Hextec';
+                        break;
+                }
+
+                return item;
+            }
+        );
+
+        const playerKDA = data.playerKDA[0].ama;
+        data.playerKDA = data.playerKDA.filter((item: any) => item.ama === playerKDA);
+
+        const playerMostKills = data.playerMostKills[0].info;
+        data.playerMostKills = data.playerMostKills.filter((item: any) => item.info === playerMostKills);
+
+        const playerDiffChampions = data.playerDiffChampions[0].championQuantity;
+        data.playerDiffChampions = data.playerDiffChampions.filter((item: any) => item.championQuantity === playerDiffChampions);
+
+        const playerFirstBlood = data.playerFirstBlood[0].info;
+        data.playerFirstBlood = data.playerFirstBlood.filter((item: any) => item.info === playerFirstBlood);
+
+        const teamFastGame = data.teamFastGame[0].info;
+        data.teamFastGame = data.teamFastGame.filter((item: any) => item.info === teamFastGame);
+
+        const teamLongGame = data.teamLongGame[0].info;
+        data.teamLongGame = data.teamLongGame.filter((item: any) => item.info === teamLongGame);
+
+        const teamDifferentChampions = data.teamDifferentChampions[0].championQuantity;
+        data.teamDifferentChampions = data.teamDifferentChampions.filter((item: any) => item.championQuantity === teamDifferentChampions);
+
+    }
+
+    return (
+        <>
+            {data ?
+                <>
+                    <a href="https://www.twitch.tv/arcanto" target="_blank">
+                        <Image className="mx-auto w-96 mt-5 mb-5" src={'/logo.png'} alt={'logo'} width={663}
+                               height={153}/>
+                    </a>
+
+                    <section className="">
+                        <div className="py-8 px-4 mx-autoclassNamew-screen-xl sm:py-16 lg:px-6">
+                            <div className="max-w-screen-md mclassNameg:mb-16">
+                                <h2 className="mb-4 text-4xl traclassName-tight font-extrabold text-gray-900 dark:text-cyan-500 font-bold">
+                                    Acompanhe os dados do bolão do mundial
+                                </h2>
+                                <p className="text-gray-500 sm:classNamexl dark:text-gray-300">
+                                    Fique por dentro dos dados que estão mais em destaque durante as partidas do Worlds
+                                    2023.
+                                </p>
+                                <p className="text-gray-500 sm:classNamexl dark:text-cyan-200">
+                                    Data da última atualização: {moment(data.lastGameAdded).format("DD/MM/YYYY")}
+                                </p>
+                            </div>
+
+                            <h2 className="mt-8 text-2xl traclassName-tight font-extrabold text-cyan-300">
+                                Informações do Evento
+                            </h2>
+
+                            <div className="grid-cols-5 grid mt-10 gap-6">
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                    <div
+                                        className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                        <GiClockwork className="w-14 h-14 text-primary-300"/>
+                                    </div>
+                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual será a
+                                        duração da partida individual mais longa do Mundial?</h3>
+
+                                    {data.teamLongGame.map((item: any, index: any) => {
+                                        return (
+                                            <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
+                                                <p className="text-white text-lg">Time: {item.name}</p>
+                                                <p className="text-white text-lg">Duração da
+                                                    Partida: {moment().startOf('day')
+                                                        .seconds(item.info)
+                                                        .format('HH:mm:ss')}</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                    <div
+                                        className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                        <GiSeaDragon className="w-14 h-14 text-primary-300"/>
+                                    </div>
+                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual Dragão
+                                        será mais abatido no Mundial?</h3>
+
+                                    {data.drakesKilled.map((item: any, index: any) => {
+                                        return (
+                                            <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
+                                                <p className="text-white text-lg">Dragão: {item.name}</p>
+                                                <p className="text-white text-lg">Quantidade: {item.info}</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+
+                            <h2 className="mt-8 text-2xl traclassName-tight font-extrabold text-cyan-300">
+                                Informações de Campeões
+                            </h2>
+
+                            <div className="grid-cols-5 grid mt-10 gap-6">
+
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                    <div
+                                        className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                        <GiPoliceTarget className="w-14 h-14 text-primary-300"/>
+                                    </div>
+                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual será o
+                                        Campeão mais banido durante a Seleção de Campeões do Mundial?</h3>
+
+                                    {data.championBans.map((item: any, index: any) => {
+                                        return (
+                                            <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
+                                                <p className="text-white text-lg">Campeão: {item.name}</p>
+                                                <p className="text-white text-lg">Quantidade: {item.info}</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                    <div
+                                        className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                        <GiArcheryTarget className="w-14 h-14 text-primary-300"/>
+                                    </div>
+                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual será o
+                                        Campeão mais escolhido durante a Seleção de Campeões do Mundial?</h3>
+
+                                    {data.championPicks.map((item: any, index: any) => {
+                                        return (
+                                            <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
+                                                <p className="text-white text-lg">Campeão: {item.name}</p>
+                                                <p className="text-white text-lg">Quantidade: {item.info}</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                    <div
+                                        className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                        <GiRelationshipBounds className="w-14 h-14 text-primary-300"/>
+                                    </div>
+                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Qual será o
+                                        Campeão mais jogado em funções diferentes no Mundial?</h3>
+
+                                    {data.championPicksDiffRoles.map((item: any, index: any) => {
+                                        return (
+                                            <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
+                                                <p className="text-white text-lg">Campeão: {item.name}</p>
+                                                <p className="text-white text-lg">Quantidade de
+                                                    Roles: {item.quantityRoles}</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                    <div
+                                        className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                        <GiReaperScythe className="w-14 h-14 text-primary-300"/>
+                                    </div>
+                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Quem terá a
+                                        maior quantidade de mortes no Mundial?</h3>
+
+                                    {data.championDeathCount.map((item: any, index: any) => {
+                                        return (
+                                            <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
+                                                <p className="text-white text-lg">Campeão: {item.name}</p>
+                                                <p className="text-white text-lg">Quantidade de Mortes: {item.info}</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                    <div
+                                        className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                        <GiCrenelCrown className="w-14 h-14 text-primary-300"/>
+                                    </div>
+                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Quem terá a
+                                        maior taxa de vitórias no Mundial? (Mínimo de 5 partidas jogadas)</h3>
+
+                                    {data.championWinRate.map((item: any, index: any) => {
+                                        return (
+                                            <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
+                                                <p className="text-white text-lg">Campeão: {item.name}</p>
+                                                <p className="text-white text-lg">Porcentagem de
+                                                    winrate: {item.winrate.toFixed(2)}%</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+
+                            <h2 className="mt-8 text-2xl traclassName-tight font-extrabold text-cyan-300">
+                                Informações de Jogadores
+                            </h2>
+
+                            <div className="grid-cols-5 grid mt-10 gap-6">
+
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                    <div
+                                        className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                        <GiMultipleTargets className="w-14 h-14 text-primary-300"/>
+                                    </div>
+                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">Quem jogará
+                                        com mais Campeões diferentes no Mundial?</h3>
+
+                                    {data.playerDiffChampions.map((item: any, index: any) => {
+                                        return (
+                                            <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
+                                                <p className="text-white text-lg">Jogador: {item.name}</p>
+                                                <p className="text-white text-lg">Quantidade de Picks
+                                                    Diferentes: {item.championQuantity}</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                    <div
+                                        className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                        <GiDeathNote className="w-14 h-14 text-primary-300"/>
+                                    </div>
+                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">
+                                        Quem conseguirá a maior quantidade de abates em uma única partida no Mundial?
+                                    </h3>
+
+                                    {data.playerMostKills.map((item: any, index: any) => {
+                                        return (
+                                            <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
+                                                <p className="text-white text-lg">Jogador: {item.name}</p>
+                                                <p className="text-white text-lg">Quantidade de Kills: {item.info}</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                    <div
+                                        className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                        <GiRank3 className="w-14 h-14 text-primary-300"/>
+                                    </div>
+                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">
+                                        Quem terá o maior AMA do Mundial?
+                                    </h3>
+
+                                    {data.playerKDA.map((item: any, index: any) => {
+                                        return (
+                                            <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
+                                                <p className="text-white text-lg">Jogador: {item.name}</p>
+                                                <p className="text-white text-lg">AMA: {item.ama.toFixed(2)}</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                    <div
+                                        className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                        <GiSkullCrack className="w-14 h-14 text-primary-300"/>
+                                    </div>
+                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">
+                                        Quem conseguirá a maior quantidade de First Bloods no Mundial?
+                                    </h3>
+
+                                    {data.playerFirstBlood.map((item: any, index: any) => {
+                                        return (
+                                            <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
+                                                <p className="text-white text-lg">Jogador: {item.name}</p>
+                                                <p className="text-white text-lg">Quantidade de
+                                                    FirstBloods: {item.info}</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                    <div
+                                        className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                        <GiSkullShield className="w-14 h-14 text-primary-300"/>
+                                    </div>
+                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">
+                                        Quem conseguirá pelo menos um Penta Kill no Mundial?
+                                    </h3>
+
+                                    {data.pentaKillPlayers.map((item: any, index: any) => {
+                                        return (
+                                            <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
+                                                <p className="text-white text-lg">Jogador: {item.name}</p>
+                                                <p className="text-white text-lg">Quantidade de Penta
+                                                    Kills: {item.info}</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+                            </div>
+
+                            <h2 className="mt-8 text-2xl traclassName-tight font-extrabold text-cyan-300">
+                                Informações de Equipes
+                            </h2>
+
+                            <div className="grid-cols-5 grid mt-10 gap-6">
+
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                    <div
+                                        className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                        <GiTimeBomb className="w-14 h-14 text-primary-300"/>
+                                    </div>
+                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">
+                                        Que equipe sairá vitoriosa da partida mais curta do Mundial?
+                                    </h3>
+
+                                    {data.teamFastGame.map((item: any, index: any) => {
+                                        return (
+                                            <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
+                                                <p className="text-white text-lg">Time: {item.name}</p>
+                                                <p className="text-white text-lg">Duração da
+                                                    Partida: {moment().startOf('day')
+                                                        .seconds(item.info)
+                                                        .format('HH:mm:ss')}</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                    <div
+                                        className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                        <GiThreeFriends className="w-14 h-14 text-primary-300"/>
+                                    </div>
+                                    <h3 className="mb-2 text-xl fontclassName dark:text-cyan-500 font-bold">
+                                        Que equipe jogará com mais Campeões diferentes em Mundial?
+                                    </h3>
+
+                                    {data.teamDifferentChampions.map((item: any, index: any) => {
+                                        return (
+                                            <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
+                                                <p className="text-white text-lg">Time: {item.name}</p>
+                                                <p className="text-white text-lg">Quantidade de Picks
+                                                    Diferentes: {item.championQuantity}</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </>
+                : <p>Não foram encontrados registros</p>}
+        </>
+    )
 }
