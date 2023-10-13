@@ -109,10 +109,10 @@ export default async function Home() {
 
                     <div className="flex justify-center gap-5">
                         <a href="https://www.twitch.tv/arcanto" target="_blank">
-                            <BsTwitch className="w-10 h-10"/>
+                            <BsTwitch className="w-10 h-10 hover:text-cyan-500 transition-all"/>
                         </a>
                         <a href="https://www.linkedin.com/in/viniciusfbastos/" target="_blank">
-                            <BsLinkedin className="w-10 h-10"/>
+                            <BsLinkedin className="w-10 h-10 hover:text-cyan-500 transition-all"/>
                         </a>
                     </div>
 
@@ -136,7 +136,7 @@ export default async function Home() {
                             </h2>
 
                             <div className="px-3 grid-cols-1 md:grid-cols-3 sm:grid-cols-1 lg:grid-cols-5 grid mt-10 gap-6">
-                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                         <GiClockwork className="w-14 h-14 text-primary-300"/>
@@ -156,7 +156,7 @@ export default async function Home() {
                                         );
                                     })}
                                 </div>
-                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                         <GiSeaDragon className="w-14 h-14 text-primary-300"/>
@@ -181,7 +181,7 @@ export default async function Home() {
 
                             <div className="px-3 grid-cols-1 md:grid-cols-3 sm:grid-cols-1 lg:grid-cols-5 grid mt-10 gap-6">
 
-                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                         <GiPoliceTarget className="w-14 h-14 text-primary-300"/>
@@ -198,7 +198,7 @@ export default async function Home() {
                                         );
                                     })}
                                 </div>
-                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                         <GiArcheryTarget className="w-14 h-14 text-primary-300"/>
@@ -215,7 +215,7 @@ export default async function Home() {
                                         );
                                     })}
                                 </div>
-                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                         <GiRelationshipBounds className="w-14 h-14 text-primary-300"/>
@@ -233,7 +233,7 @@ export default async function Home() {
                                         );
                                     })}
                                 </div>
-                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                         <GiReaperScythe className="w-14 h-14 text-primary-300"/>
@@ -250,7 +250,7 @@ export default async function Home() {
                                         );
                                     })}
                                 </div>
-                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                         <GiCrenelCrown className="w-14 h-14 text-primary-300"/>
@@ -276,7 +276,7 @@ export default async function Home() {
 
                             <div className="px-3 grid-cols-1 md:grid-cols-3 sm:grid-cols-1 lg:grid-cols-5 grid mt-10 gap-6">
 
-                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                         <GiMultipleTargets className="w-14 h-14 text-primary-300"/>
@@ -295,7 +295,7 @@ export default async function Home() {
                                     })}
                                 </div>
 
-                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                         <GiDeathNote className="w-14 h-14 text-primary-300"/>
@@ -314,7 +314,7 @@ export default async function Home() {
                                     })}
                                 </div>
 
-                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                         <GiRank3 className="w-14 h-14 text-primary-300"/>
@@ -333,7 +333,7 @@ export default async function Home() {
                                     })}
                                 </div>
 
-                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                         <GiSkullCrack className="w-14 h-14 text-primary-300"/>
@@ -353,7 +353,7 @@ export default async function Home() {
                                     })}
                                 </div>
 
-                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                         <GiSkullShield className="w-14 h-14 text-primary-300"/>
@@ -380,7 +380,7 @@ export default async function Home() {
 
                             <div className="px-3 grid-cols-1 md:grid-cols-3 sm:grid-cols-1 lg:grid-cols-5 grid mt-10 gap-6">
 
-                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                         <GiTimeBomb className="w-14 h-14 text-primary-300"/>
@@ -402,7 +402,7 @@ export default async function Home() {
                                     })}
                                 </div>
 
-                                <div className="border-2 border-gray-500 p-4 bg-gray-900">
+                                <div className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all">
                                     <div
                                         className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
                                         <GiThreeFriends className="w-14 h-14 text-primary-300"/>
