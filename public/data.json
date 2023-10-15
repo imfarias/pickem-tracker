@@ -1,1 +1,1381 @@
-{"lastGameAdded":"2023-10-14T13:14:23.000Z","championBans":{"Lee Sin":9,"Poppy":13,"Akali":4,"Sejuani":11,"Maokai":16,"Rell":7,"Senna":4,"Vi":8,"Orianna":15,"Jax":7,"Sylas":2,"Taliyah":7,"Neeko":11,"Jarvan IV":7,"Kennen":3,"Ezreal":3,"Tristana":5,"K'Sante":4,"Olaf":6,"Nocturne":8,"Rumble":11,"Syndra":3,"Viktor":1,"Xayah":6,"Blitzcrank":3,"Sion":1,"Azir":3,"Aphelios":1,"Ivern":2,"Darius":6,"Jayce":3,"Yone":2,"Kai'Sa":3,"Viego":5,"Rakan":4,"LeBlanc":4,"Nautilus":4,"Draven":1,"Ahri":2,"Renekton":4,"Sivir":1},"championPicks":{"Kennen":2,"Jarvan IV":8,"Neeko":6,"Xayah":16,"Rakan":14,"Renekton":11,"Viego":5,"Taliyah":4,"Ezreal":4,"Nautilus":8,"Rumble":4,"Maokai":6,"Jayce":5,"Aphelios":2,"K'Sante":8,"Sejuani":6,"Orianna":5,"Kai'Sa":16,"Lee Sin":6,"Ahri":6,"Rell":11,"Nocturne":2,"Aatrox":7,"Vi":4,"Senna":1,"Draven":1,"Blitzcrank":3,"Akali":1,"Darius":1,"Syndra":7,"Alistar":6,"Braum":2,"LeBlanc":2,"Gragas":1,"Gnar":3,"Sivir":2,"Malphite":1,"Kha'Zix":1,"Kalista":2,"Gwen":2,"Azir":3,"Sylas":2,"Wukong":2,"Jax":2,"Ivern":2,"Cassiopeia":1,"Poppy":1,"Tristana":1,"Viktor":1,"Olaf":1,"Sett":1,"Taric":1},"championWinRate":{"Kennen":{"wins":2,"loses":0},"Jarvan IV":{"wins":4,"loses":4},"Neeko":{"wins":4,"loses":2},"Xayah":{"wins":11,"loses":5},"Rakan":{"wins":8,"loses":6},"Renekton":{"wins":3,"loses":8},"Viego":{"wins":3,"loses":2},"Taliyah":{"wins":0,"loses":4},"Ezreal":{"wins":1,"loses":3},"Nautilus":{"wins":4,"loses":4},"Rumble":{"wins":3,"loses":1},"Maokai":{"wins":3,"loses":3},"Jayce":{"wins":4,"loses":1},"Aphelios":{"wins":1,"loses":1},"K'Sante":{"wins":6,"loses":2},"Sejuani":{"wins":3,"loses":3},"Orianna":{"wins":3,"loses":2},"Kai'Sa":{"wins":6,"loses":10},"Lee Sin":{"wins":1,"loses":5},"Ahri":{"wins":0,"loses":6},"Rell":{"wins":6,"loses":5},"Nocturne":{"wins":2,"loses":0},"Aatrox":{"wins":1,"loses":6},"Vi":{"wins":2,"loses":2},"Senna":{"wins":0,"loses":1},"Draven":{"wins":1,"loses":0},"Blitzcrank":{"wins":1,"loses":2},"Akali":{"wins":0,"loses":1},"Darius":{"wins":1,"loses":0},"Syndra":{"wins":5,"loses":2},"Alistar":{"wins":2,"loses":4},"Braum":{"wins":1,"loses":1},"LeBlanc":{"wins":2,"loses":0},"Gragas":{"wins":0,"loses":1},"Gnar":{"wins":3,"loses":0},"Sivir":{"wins":0,"loses":2},"Malphite":{"wins":0,"loses":1},"Kha'Zix":{"wins":0,"loses":1},"Kalista":{"wins":2,"loses":0},"Gwen":{"wins":0,"loses":2},"Azir":{"wins":2,"loses":1},"Sylas":{"wins":0,"loses":2},"Wukong":{"wins":2,"loses":0},"Jax":{"wins":2,"loses":0},"Ivern":{"wins":1,"loses":1},"Cassiopeia":{"wins":1,"loses":0},"Poppy":{"wins":0,"loses":1},"Tristana":{"wins":0,"loses":1},"Viktor":{"wins":1,"loses":0},"Olaf":{"wins":0,"loses":1},"Sett":{"wins":1,"loses":0},"Taric":{"wins":1,"loses":0}},"championPicksDiffRoles":{"Kennen":{"top":2,"quantityRoles":1},"Jarvan IV":{"jng":8,"quantityRoles":1},"Neeko":{"mid":6,"quantityRoles":1},"Xayah":{"bot":16,"quantityRoles":1},"Rakan":{"sup":14,"quantityRoles":1},"Renekton":{"top":11,"quantityRoles":1},"Viego":{"jng":5,"quantityRoles":1},"Taliyah":{"mid":4,"quantityRoles":1},"Ezreal":{"bot":4,"quantityRoles":1},"Nautilus":{"sup":8,"quantityRoles":1},"Rumble":{"top":4,"quantityRoles":1},"Maokai":{"jng":5,"quantityRoles":2,"sup":1},"Jayce":{"mid":5,"quantityRoles":1},"Aphelios":{"bot":2,"quantityRoles":1},"K'Sante":{"top":8,"quantityRoles":1},"Sejuani":{"jng":6,"quantityRoles":1},"Orianna":{"mid":5,"quantityRoles":1},"Kai'Sa":{"bot":16,"quantityRoles":1},"Lee Sin":{"jng":6,"quantityRoles":1},"Ahri":{"mid":6,"quantityRoles":1},"Rell":{"sup":9,"quantityRoles":2,"jng":2},"Nocturne":{"jng":2,"quantityRoles":1},"Aatrox":{"top":7,"quantityRoles":1},"Vi":{"jng":4,"quantityRoles":1},"Senna":{"bot":1,"quantityRoles":1},"Draven":{"bot":1,"quantityRoles":1},"Blitzcrank":{"sup":3,"quantityRoles":1},"Akali":{"mid":1,"quantityRoles":1},"Darius":{"top":1,"quantityRoles":1},"Syndra":{"mid":7,"quantityRoles":1},"Alistar":{"sup":6,"quantityRoles":1},"Braum":{"sup":2,"quantityRoles":1},"LeBlanc":{"mid":2,"quantityRoles":1},"Gragas":{"jng":1,"quantityRoles":1},"Gnar":{"top":3,"quantityRoles":1},"Sivir":{"bot":2,"quantityRoles":1},"Malphite":{"top":1,"quantityRoles":1},"Kha'Zix":{"jng":1,"quantityRoles":1},"Kalista":{"bot":2,"quantityRoles":1},"Gwen":{"top":2,"quantityRoles":1},"Azir":{"mid":3,"quantityRoles":1},"Sylas":{"mid":2,"quantityRoles":1},"Wukong":{"jng":2,"quantityRoles":1},"Jax":{"top":2,"quantityRoles":1},"Ivern":{"jng":2,"quantityRoles":1},"Cassiopeia":{"mid":1,"quantityRoles":1},"Poppy":{"top":1,"quantityRoles":1},"Tristana":{"mid":1,"quantityRoles":1},"Viktor":{"mid":1,"quantityRoles":1},"Olaf":{"top":1,"quantityRoles":1},"Sett":{"top":1,"quantityRoles":1},"Taric":{"sup":1,"quantityRoles":1}},"championDeathCount":{"Kennen":2,"Jarvan IV":33,"Neeko":13,"Xayah":29,"Rakan":30,"Renekton":39,"Viego":10,"Taliyah":11,"Ezreal":8,"Nautilus":25,"Rumble":7,"Maokai":12,"Jayce":8,"Aphelios":4,"K'Sante":20,"Sejuani":15,"Orianna":13,"Kai'Sa":31,"Lee Sin":22,"Ahri":16,"Rell":33,"Nocturne":6,"Aatrox":25,"Vi":11,"Senna":3,"Draven":2,"Blitzcrank":8,"Akali":3,"Darius":0,"Syndra":12,"Alistar":21,"Braum":5,"LeBlanc":4,"Gragas":1,"Gnar":4,"Sivir":6,"Malphite":5,"Kha'Zix":6,"Kalista":4,"Gwen":11,"Azir":9,"Sylas":7,"Wukong":2,"Jax":2,"Ivern":4,"Cassiopeia":3,"Poppy":4,"Tristana":6,"Viktor":2,"Olaf":7,"Sett":5,"Taric":0},"drakesKilled":{"infernals":19,"mountains":19,"clouds":19,"oceans":13,"chemtechs":17,"hextechs":11},"pentaKillPlayers":{"Route - LOUD":1,"Slayder - GAM Esports":1,"Crownie - Team BDS":1},"playerKDA":{"Azhi - PSG Talon":{"kills":13,"deaths":7,"assists":32},"JunJia - PSG Talon":{"kills":15,"deaths":7,"assists":46},"Maple - PSG Talon":{"kills":14,"deaths":6,"assists":31},"Wako - PSG Talon":{"kills":27,"deaths":3,"assists":19},"Woody - PSG Talon":{"kills":6,"deaths":7,"assists":52},"Bong - Movistar R7":{"kills":5,"deaths":17,"assists":8},"Oddie - Movistar R7":{"kills":3,"deaths":12,"assists":14},"Mireu - Movistar R7":{"kills":9,"deaths":15,"assists":10},"Ceo - Movistar R7":{"kills":7,"deaths":14,"assists":11},"Lyonz - Movistar R7":{"kills":2,"deaths":15,"assists":14},"Robo - LOUD":{"kills":18,"deaths":27,"assists":23},"Croc - LOUD":{"kills":10,"deaths":30,"assists":30},"tinowns - LOUD":{"kills":10,"deaths":14,"assists":28},"Route - LOUD":{"kills":26,"deaths":13,"assists":22},"Ceos - LOUD":{"kills":3,"deaths":23,"assists":44},"Kiaya - GAM Esports":{"kills":26,"deaths":16,"assists":46},"Levi - GAM Esports":{"kills":17,"deaths":12,"assists":59},"Kati - GAM Esports":{"kills":19,"deaths":14,"assists":44},"Slayder - GAM Esports":{"kills":41,"deaths":11,"assists":27},"Palette - GAM Esports":{"kills":2,"deaths":10,"assists":73},"apaMEN - DetonatioN FocusMe":{"kills":1,"deaths":14,"assists":6},"Steal - DetonatioN FocusMe":{"kills":5,"deaths":17,"assists":12},"Aria - DetonatioN FocusMe":{"kills":11,"deaths":13,"assists":8},"Yutapon - DetonatioN FocusMe":{"kills":6,"deaths":10,"assists":12},"Harp - DetonatioN FocusMe":{"kills":0,"deaths":13,"assists":19},"Rest - CTBC Flying Oyster":{"kills":18,"deaths":15,"assists":32},"Gemini - CTBC Flying Oyster":{"kills":13,"deaths":18,"assists":65},"JimieN - CTBC Flying Oyster":{"kills":27,"deaths":16,"assists":45},"Shunn - CTBC Flying Oyster":{"kills":34,"deaths":17,"assists":40},"ShiauC - CTBC Flying Oyster":{"kills":7,"deaths":26,"assists":70},"Adam - Team BDS":{"kills":22,"deaths":19,"assists":35},"Sheo - Team BDS":{"kills":11,"deaths":9,"assists":62},"nuc - Team BDS":{"kills":29,"deaths":16,"assists":34},"Crownie - Team BDS":{"kills":32,"deaths":12,"assists":36},"Labrov - Team BDS":{"kills":1,"deaths":15,"assists":75},"Sparda - Team Whales":{"kills":14,"deaths":16,"assists":41},"BeanJ - Team Whales":{"kills":12,"deaths":18,"assists":48},"Glory - Team Whales":{"kills":22,"deaths":13,"assists":30},"Artemis - Team Whales":{"kills":26,"deaths":7,"assists":37},"Bie - Team Whales":{"kills":4,"deaths":12,"assists":53}},"playerMostKills":{"Azhi - PSG Talon":5,"JunJia - PSG Talon":7,"Maple - PSG Talon":6,"Wako - PSG Talon":11,"Woody - PSG Talon":3,"Bong - Movistar R7":2,"Oddie - Movistar R7":2,"Mireu - Movistar R7":4,"Ceo - Movistar R7":3,"Lyonz - Movistar R7":1,"Robo - LOUD":8,"Croc - LOUD":3,"tinowns - LOUD":3,"Route - LOUD":11,"Ceos - LOUD":2,"Kiaya - GAM Esports":7,"Levi - GAM Esports":6,"Kati - GAM Esports":9,"Slayder - GAM Esports":10,"Palette - GAM Esports":1,"apaMEN - DetonatioN FocusMe":1,"Steal - DetonatioN FocusMe":3,"Aria - DetonatioN FocusMe":6,"Yutapon - DetonatioN FocusMe":3,"Harp - DetonatioN FocusMe":0,"Rest - CTBC Flying Oyster":6,"Gemini - CTBC Flying Oyster":5,"JimieN - CTBC Flying Oyster":10,"Shunn - CTBC Flying Oyster":8,"ShiauC - CTBC Flying Oyster":4,"Adam - Team BDS":8,"Sheo - Team BDS":5,"nuc - Team BDS":8,"Crownie - Team BDS":10,"Labrov - Team BDS":1,"Sparda - Team Whales":6,"BeanJ - Team Whales":4,"Glory - Team Whales":10,"Artemis - Team Whales":11,"Bie - Team Whales":3},"playerDiffChampions":{"Azhi - PSG Talon":["Kennen","Rumble","Gnar"],"JunJia - PSG Talon":["Jarvan IV","Maokai","Viego"],"Maple - PSG Talon":["Neeko","Jayce","LeBlanc"],"Wako - PSG Talon":["Xayah","Aphelios","Kai'Sa"],"Woody - PSG Talon":["Rakan","Rell"],"Bong - Movistar R7":["Renekton","K'Sante","Gwen"],"Oddie - Movistar R7":["Viego","Sejuani","Jarvan IV","Lee Sin"],"Mireu - Movistar R7":["Taliyah","Orianna","Sylas","Ahri"],"Ceo - Movistar R7":["Ezreal","Xayah","Kai'Sa"],"Lyonz - Movistar R7":["Nautilus","Rell","Rakan"],"Robo - LOUD":["Renekton","K'Sante","Malphite","Aatrox","Olaf"],"Croc - LOUD":["Viego","Nocturne","Sejuani","Kha'Zix","Lee Sin","Jarvan IV"],"tinowns - LOUD":["Neeko","Orianna","Taliyah","Ahri"],"Route - LOUD":["Kai'Sa","Xayah","Sivir"],"Ceos - LOUD":["Rakan","Alistar","Nautilus"],"Kiaya - GAM Esports":["Rumble","Renekton","K'Sante","Jax","Gnar"],"Levi - GAM Esports":["Jarvan IV","Lee Sin","Wukong","Vi","Nocturne"],"Kati - GAM Esports":["Orianna","Ahri","Syndra","Viktor"],"Slayder - GAM Esports":["Xayah","Kai'Sa"],"Palette - GAM Esports":["Nautilus","Rell","Rakan"],"apaMEN - DetonatioN FocusMe":["Aatrox","Poppy"],"Steal - DetonatioN FocusMe":["Vi","Jarvan IV","Maokai","Ivern"],"Aria - DetonatioN FocusMe":["Ahri","Akali","Syndra","Tristana"],"Yutapon - DetonatioN FocusMe":["Senna","Xayah","Kai'Sa"],"Harp - DetonatioN FocusMe":["Maokai","Rakan","Alistar","Blitzcrank"],"Rest - CTBC Flying Oyster":["Rumble","Gnar","Gwen","Renekton","Aatrox"],"Gemini - CTBC Flying Oyster":["Sejuani","Maokai","Lee Sin","Vi"],"JimieN - CTBC Flying Oyster":["Jayce","Orianna","Ahri","Azir","Sylas"],"Shunn - CTBC Flying Oyster":["Draven","Kai'Sa","Kalista","Xayah"],"ShiauC - CTBC Flying Oyster":["Nautilus","Blitzcrank","Rell","Alistar"],"Adam - Team BDS":["Darius","Renekton","Jax","Sett"],"Sheo - Team BDS":["Rell","Gragas","Ivern","Vi","Sejuani","Maokai"],"nuc - Team BDS":["Syndra","Taliyah","Jayce","Cassiopeia","Azir"],"Crownie - Team BDS":["Ezreal","Xayah","Kalista"],"Labrov - Team BDS":["Alistar","Braum","Rakan","Taric"],"Sparda - Team Whales":["Renekton","K'Sante","Aatrox"],"BeanJ - Team Whales":["Viego","Lee Sin","Jarvan IV"],"Glory - Team Whales":["Neeko","Syndra","LeBlanc","Ahri","Orianna"],"Artemis - Team Whales":["Kai'Sa","Xayah","Aphelios"],"Bie - Team Whales":["Rakan","Nautilus","Alistar"]},"playerFirstBlood":{"Ceo - Movistar R7":1,"Woody - PSG Talon":1,"Ceos - LOUD":1,"Robo - LOUD":2,"JimieN - CTBC Flying Oyster":1,"Shunn - CTBC Flying Oyster":3,"Sheo - Team BDS":1,"BeanJ - Team Whales":2,"Artemis - Team Whales":1,"Azhi - PSG Talon":1,"Gemini - CTBC Flying Oyster":1,"Mireu - Movistar R7":1,"Oddie - Movistar R7":1,"Steal - DetonatioN FocusMe":1,"Yutapon - DetonatioN FocusMe":1,"Croc - LOUD":1,"tinowns - LOUD":1,"Crownie - Team BDS":1},"teamFastGame":{"PSG Talon":1718,"LOUD":1634,"CTBC Flying Oyster":1658,"Team BDS":1428,"Team Whales":1842,"GAM Esports":1582},"teamLongGame":{"PSG Talon":1976,"LOUD":2376,"CTBC Flying Oyster":2040,"Team BDS":2548,"Team Whales":2469,"GAM Esports":2196},"teamDifferentChampions":{"PSG Talon":["Kennen","Jarvan IV","Neeko","Xayah","Rakan","Rumble","Maokai","Jayce","Aphelios","Gnar","Rell","Viego","LeBlanc","Kai'Sa"],"Movistar R7":["Renekton","Viego","Taliyah","Ezreal","Nautilus","K'Sante","Sejuani","Orianna","Xayah","Gwen","Jarvan IV","Sylas","Kai'Sa","Rell","Lee Sin","Ahri","Rakan"],"LOUD":["Renekton","Viego","Neeko","Kai'Sa","Rakan","K'Sante","Nocturne","Orianna","Xayah","Sejuani","Taliyah","Sivir","Malphite","Kha'Zix","Alistar","Aatrox","Lee Sin","Ahri","Nautilus","Olaf","Jarvan IV"],"GAM Esports":["Rumble","Jarvan IV","Orianna","Xayah","Nautilus","Renekton","Lee Sin","Ahri","Kai'Sa","Rell","K'Sante","Wukong","Syndra","Rakan","Jax","Vi","Nocturne","Viktor","Gnar"],"DetonatioN FocusMe":["Aatrox","Vi","Ahri","Senna","Maokai","Jarvan IV","Akali","Xayah","Rakan","Syndra","Kai'Sa","Alistar","Poppy","Ivern","Tristana","Blitzcrank"],"CTBC Flying Oyster":["Rumble","Sejuani","Jayce","Draven","Nautilus","Maokai","Kai'Sa","Blitzcrank","Gnar","Orianna","Kalista","Rell","Gwen","Lee Sin","Ahri","Renekton","Vi","Azir","Xayah","Aatrox","Sylas","Alistar"],"Team BDS":["Darius","Rell","Syndra","Ezreal","Alistar","Renekton","Taliyah","Braum","Gragas","Rakan","Ivern","Jayce","Xayah","Jax","Vi","Cassiopeia","Sett","Sejuani","Azir","Maokai","Kalista","Taric"],"Team Whales":["Renekton","Viego","Neeko","Kai'Sa","Rakan","K'Sante","Syndra","Nautilus","Lee Sin","LeBlanc","Xayah","Ahri","Aphelios","Alistar","Jarvan IV","Aatrox","Orianna"]}}
+{
+  "lastGameAdded": "2023-10-15T13:18:58.000Z",
+  "championBans": {
+    "Lee Sin": 9,
+    "Poppy": 14,
+    "Akali": 4,
+    "Sejuani": 14,
+    "Maokai": 21,
+    "Rell": 8,
+    "Senna": 4,
+    "Vi": 9,
+    "Orianna": 21,
+    "Jax": 10,
+    "Sylas": 2,
+    "Taliyah": 7,
+    "Neeko": 18,
+    "Jarvan IV": 10,
+    "Kennen": 7,
+    "Ezreal": 3,
+    "Tristana": 6,
+    "K'Sante": 7,
+    "Olaf": 7,
+    "Nocturne": 12,
+    "Rumble": 16,
+    "Syndra": 5,
+    "Viktor": 1,
+    "Xayah": 12,
+    "Blitzcrank": 3,
+    "Sion": 1,
+    "Azir": 5,
+    "Aphelios": 1,
+    "Ivern": 4,
+    "Darius": 6,
+    "Jayce": 4,
+    "Yone": 2,
+    "Kai'Sa": 4,
+    "Viego": 7,
+    "Rakan": 6,
+    "LeBlanc": 8,
+    "Nautilus": 5,
+    "Draven": 1,
+    "Ahri": 6,
+    "Renekton": 5,
+    "Sivir": 1,
+    "Alistar": 2,
+    "Wukong": 3,
+    "Aatrox": 1,
+    "Kalista": 4,
+    "Cassiopeia": 2,
+    "Braum": 1,
+    "Gnar": 1
+  },
+  "championPicks": {
+    "Kennen": 3,
+    "Jarvan IV": 11,
+    "Neeko": 6,
+    "Xayah": 19,
+    "Rakan": 16,
+    "Renekton": 15,
+    "Viego": 7,
+    "Taliyah": 8,
+    "Ezreal": 4,
+    "Nautilus": 13,
+    "Rumble": 4,
+    "Maokai": 10,
+    "Jayce": 8,
+    "Aphelios": 4,
+    "K'Sante": 10,
+    "Sejuani": 8,
+    "Orianna": 7,
+    "Kai'Sa": 24,
+    "Lee Sin": 9,
+    "Ahri": 6,
+    "Rell": 16,
+    "Nocturne": 2,
+    "Aatrox": 7,
+    "Vi": 4,
+    "Senna": 1,
+    "Draven": 1,
+    "Blitzcrank": 3,
+    "Akali": 2,
+    "Darius": 2,
+    "Syndra": 10,
+    "Alistar": 10,
+    "Braum": 2,
+    "LeBlanc": 2,
+    "Gragas": 1,
+    "Gnar": 5,
+    "Sivir": 2,
+    "Malphite": 2,
+    "Kha'Zix": 1,
+    "Kalista": 4,
+    "Gwen": 2,
+    "Azir": 5,
+    "Sylas": 3,
+    "Wukong": 3,
+    "Jax": 6,
+    "Ivern": 3,
+    "Cassiopeia": 2,
+    "Poppy": 2,
+    "Tristana": 2,
+    "Viktor": 2,
+    "Olaf": 2,
+    "Sett": 2,
+    "Taric": 1,
+    "Leona": 1,
+    "Sion": 1,
+    "Zeri": 2,
+    "Caitlyn": 1,
+    "Garen": 1
+  },
+  "championWinRate": {
+    "Kennen": {
+      "wins": 3,
+      "loses": 0
+    },
+    "Jarvan IV": {
+      "wins": 4,
+      "loses": 7
+    },
+    "Neeko": {
+      "wins": 4,
+      "loses": 2
+    },
+    "Xayah": {
+      "wins": 13,
+      "loses": 6
+    },
+    "Rakan": {
+      "wins": 9,
+      "loses": 7
+    },
+    "Renekton": {
+      "wins": 5,
+      "loses": 10
+    },
+    "Viego": {
+      "wins": 5,
+      "loses": 2
+    },
+    "Taliyah": {
+      "wins": 1,
+      "loses": 7
+    },
+    "Ezreal": {
+      "wins": 1,
+      "loses": 3
+    },
+    "Nautilus": {
+      "wins": 6,
+      "loses": 7
+    },
+    "Rumble": {
+      "wins": 3,
+      "loses": 1
+    },
+    "Maokai": {
+      "wins": 6,
+      "loses": 4
+    },
+    "Jayce": {
+      "wins": 6,
+      "loses": 2
+    },
+    "Aphelios": {
+      "wins": 1,
+      "loses": 3
+    },
+    "K'Sante": {
+      "wins": 7,
+      "loses": 3
+    },
+    "Sejuani": {
+      "wins": 4,
+      "loses": 4
+    },
+    "Orianna": {
+      "wins": 4,
+      "loses": 3
+    },
+    "Kai'Sa": {
+      "wins": 12,
+      "loses": 12
+    },
+    "Lee Sin": {
+      "wins": 1,
+      "loses": 8
+    },
+    "Ahri": {
+      "wins": 0,
+      "loses": 6
+    },
+    "Rell": {
+      "wins": 8,
+      "loses": 8
+    },
+    "Nocturne": {
+      "wins": 2,
+      "loses": 0
+    },
+    "Aatrox": {
+      "wins": 1,
+      "loses": 6
+    },
+    "Vi": {
+      "wins": 2,
+      "loses": 2
+    },
+    "Senna": {
+      "wins": 0,
+      "loses": 1
+    },
+    "Draven": {
+      "wins": 1,
+      "loses": 0
+    },
+    "Blitzcrank": {
+      "wins": 1,
+      "loses": 2
+    },
+    "Akali": {
+      "wins": 1,
+      "loses": 1
+    },
+    "Darius": {
+      "wins": 2,
+      "loses": 0
+    },
+    "Syndra": {
+      "wins": 6,
+      "loses": 4
+    },
+    "Alistar": {
+      "wins": 5,
+      "loses": 5
+    },
+    "Braum": {
+      "wins": 1,
+      "loses": 1
+    },
+    "LeBlanc": {
+      "wins": 2,
+      "loses": 0
+    },
+    "Gragas": {
+      "wins": 0,
+      "loses": 1
+    },
+    "Gnar": {
+      "wins": 3,
+      "loses": 2
+    },
+    "Sivir": {
+      "wins": 0,
+      "loses": 2
+    },
+    "Malphite": {
+      "wins": 0,
+      "loses": 2
+    },
+    "Kha'Zix": {
+      "wins": 0,
+      "loses": 1
+    },
+    "Kalista": {
+      "wins": 2,
+      "loses": 2
+    },
+    "Gwen": {
+      "wins": 0,
+      "loses": 2
+    },
+    "Azir": {
+      "wins": 3,
+      "loses": 2
+    },
+    "Sylas": {
+      "wins": 0,
+      "loses": 3
+    },
+    "Wukong": {
+      "wins": 3,
+      "loses": 0
+    },
+    "Jax": {
+      "wins": 4,
+      "loses": 2
+    },
+    "Ivern": {
+      "wins": 2,
+      "loses": 1
+    },
+    "Cassiopeia": {
+      "wins": 2,
+      "loses": 0
+    },
+    "Poppy": {
+      "wins": 1,
+      "loses": 1
+    },
+    "Tristana": {
+      "wins": 1,
+      "loses": 1
+    },
+    "Viktor": {
+      "wins": 1,
+      "loses": 1
+    },
+    "Olaf": {
+      "wins": 1,
+      "loses": 1
+    },
+    "Sett": {
+      "wins": 2,
+      "loses": 0
+    },
+    "Taric": {
+      "wins": 1,
+      "loses": 0
+    },
+    "Leona": {
+      "wins": 0,
+      "loses": 1
+    },
+    "Sion": {
+      "wins": 0,
+      "loses": 1
+    },
+    "Zeri": {
+      "wins": 1,
+      "loses": 1
+    },
+    "Caitlyn": {
+      "wins": 0,
+      "loses": 1
+    },
+    "Garen": {
+      "wins": 1,
+      "loses": 0
+    }
+  },
+  "championPicksDiffRoles": {
+    "Kennen": {
+      "top": 3,
+      "quantityRoles": 1
+    },
+    "Jarvan IV": {
+      "jng": 11,
+      "quantityRoles": 1
+    },
+    "Neeko": {
+      "mid": 6,
+      "quantityRoles": 1
+    },
+    "Xayah": {
+      "bot": 19,
+      "quantityRoles": 1
+    },
+    "Rakan": {
+      "sup": 16,
+      "quantityRoles": 1
+    },
+    "Renekton": {
+      "top": 15,
+      "quantityRoles": 1
+    },
+    "Viego": {
+      "jng": 7,
+      "quantityRoles": 1
+    },
+    "Taliyah": {
+      "mid": 7,
+      "quantityRoles": 2,
+      "jng": 1
+    },
+    "Ezreal": {
+      "bot": 4,
+      "quantityRoles": 1
+    },
+    "Nautilus": {
+      "sup": 13,
+      "quantityRoles": 1
+    },
+    "Rumble": {
+      "top": 4,
+      "quantityRoles": 1
+    },
+    "Maokai": {
+      "jng": 9,
+      "quantityRoles": 2,
+      "sup": 1
+    },
+    "Jayce": {
+      "mid": 8,
+      "quantityRoles": 1
+    },
+    "Aphelios": {
+      "bot": 4,
+      "quantityRoles": 1
+    },
+    "K'Sante": {
+      "top": 10,
+      "quantityRoles": 1
+    },
+    "Sejuani": {
+      "jng": 8,
+      "quantityRoles": 1
+    },
+    "Orianna": {
+      "mid": 7,
+      "quantityRoles": 1
+    },
+    "Kai'Sa": {
+      "bot": 24,
+      "quantityRoles": 1
+    },
+    "Lee Sin": {
+      "jng": 9,
+      "quantityRoles": 1
+    },
+    "Ahri": {
+      "mid": 6,
+      "quantityRoles": 1
+    },
+    "Rell": {
+      "sup": 14,
+      "quantityRoles": 2,
+      "jng": 2
+    },
+    "Nocturne": {
+      "jng": 2,
+      "quantityRoles": 1
+    },
+    "Aatrox": {
+      "top": 7,
+      "quantityRoles": 1
+    },
+    "Vi": {
+      "jng": 4,
+      "quantityRoles": 1
+    },
+    "Senna": {
+      "bot": 1,
+      "quantityRoles": 1
+    },
+    "Draven": {
+      "bot": 1,
+      "quantityRoles": 1
+    },
+    "Blitzcrank": {
+      "sup": 3,
+      "quantityRoles": 1
+    },
+    "Akali": {
+      "mid": 2,
+      "quantityRoles": 1
+    },
+    "Darius": {
+      "top": 2,
+      "quantityRoles": 1
+    },
+    "Syndra": {
+      "mid": 10,
+      "quantityRoles": 1
+    },
+    "Alistar": {
+      "sup": 10,
+      "quantityRoles": 1
+    },
+    "Braum": {
+      "sup": 2,
+      "quantityRoles": 1
+    },
+    "LeBlanc": {
+      "mid": 2,
+      "quantityRoles": 1
+    },
+    "Gragas": {
+      "jng": 1,
+      "quantityRoles": 1
+    },
+    "Gnar": {
+      "top": 5,
+      "quantityRoles": 1
+    },
+    "Sivir": {
+      "bot": 2,
+      "quantityRoles": 1
+    },
+    "Malphite": {
+      "top": 2,
+      "quantityRoles": 1
+    },
+    "Kha'Zix": {
+      "jng": 1,
+      "quantityRoles": 1
+    },
+    "Kalista": {
+      "bot": 4,
+      "quantityRoles": 1
+    },
+    "Gwen": {
+      "top": 2,
+      "quantityRoles": 1
+    },
+    "Azir": {
+      "mid": 5,
+      "quantityRoles": 1
+    },
+    "Sylas": {
+      "mid": 3,
+      "quantityRoles": 1
+    },
+    "Wukong": {
+      "jng": 3,
+      "quantityRoles": 1
+    },
+    "Jax": {
+      "top": 6,
+      "quantityRoles": 1
+    },
+    "Ivern": {
+      "jng": 3,
+      "quantityRoles": 1
+    },
+    "Cassiopeia": {
+      "mid": 2,
+      "quantityRoles": 1
+    },
+    "Poppy": {
+      "top": 1,
+      "quantityRoles": 2,
+      "jng": 1
+    },
+    "Tristana": {
+      "mid": 2,
+      "quantityRoles": 1
+    },
+    "Viktor": {
+      "mid": 2,
+      "quantityRoles": 1
+    },
+    "Olaf": {
+      "top": 2,
+      "quantityRoles": 1
+    },
+    "Sett": {
+      "top": 1,
+      "quantityRoles": 2,
+      "sup": 1
+    },
+    "Taric": {
+      "sup": 1,
+      "quantityRoles": 1
+    },
+    "Leona": {
+      "sup": 1,
+      "quantityRoles": 1
+    },
+    "Sion": {
+      "top": 1,
+      "quantityRoles": 1
+    },
+    "Zeri": {
+      "bot": 2,
+      "quantityRoles": 1
+    },
+    "Caitlyn": {
+      "bot": 1,
+      "quantityRoles": 1
+    },
+    "Garen": {
+      "top": 1,
+      "quantityRoles": 1
+    }
+  },
+  "championDeathCount": {
+    "Kennen": 2,
+    "Jarvan IV": 46,
+    "Neeko": 13,
+    "Xayah": 34,
+    "Rakan": 32,
+    "Renekton": 53,
+    "Viego": 13,
+    "Taliyah": 20,
+    "Ezreal": 8,
+    "Nautilus": 38,
+    "Rumble": 7,
+    "Maokai": 22,
+    "Jayce": 17,
+    "Aphelios": 9,
+    "K'Sante": 23,
+    "Sejuani": 21,
+    "Orianna": 21,
+    "Kai'Sa": 45,
+    "Lee Sin": 37,
+    "Ahri": 16,
+    "Rell": 49,
+    "Nocturne": 6,
+    "Aatrox": 25,
+    "Vi": 11,
+    "Senna": 3,
+    "Draven": 2,
+    "Blitzcrank": 8,
+    "Akali": 3,
+    "Darius": 3,
+    "Syndra": 25,
+    "Alistar": 34,
+    "Braum": 5,
+    "LeBlanc": 4,
+    "Gragas": 1,
+    "Gnar": 11,
+    "Sivir": 6,
+    "Malphite": 9,
+    "Kha'Zix": 6,
+    "Kalista": 13,
+    "Gwen": 11,
+    "Azir": 17,
+    "Sylas": 11,
+    "Wukong": 5,
+    "Jax": 16,
+    "Ivern": 5,
+    "Cassiopeia": 6,
+    "Poppy": 6,
+    "Tristana": 8,
+    "Viktor": 7,
+    "Olaf": 9,
+    "Sett": 7,
+    "Taric": 0,
+    "Leona": 5,
+    "Sion": 2,
+    "Zeri": 1,
+    "Caitlyn": 6,
+    "Garen": 1
+  },
+  "drakesKilled": {
+    "infernals": 25,
+    "mountains": 23,
+    "clouds": 27,
+    "oceans": 21,
+    "chemtechs": 24,
+    "hextechs": 19
+  },
+  "pentaKillPlayers": {
+    "Route - LOUD": 1,
+    "Slayder - GAM Esports": 1,
+    "Crownie - Team BDS": 1
+  },
+  "playerKDA": {
+    "Azhi - PSG Talon": {
+      "kills": 24,
+      "deaths": 22,
+      "assists": 54
+    },
+    "JunJia - PSG Talon": {
+      "kills": 22,
+      "deaths": 22,
+      "assists": 86
+    },
+    "Maple - PSG Talon": {
+      "kills": 39,
+      "deaths": 17,
+      "assists": 53
+    },
+    "Wako - PSG Talon": {
+      "kills": 43,
+      "deaths": 15,
+      "assists": 37
+    },
+    "Woody - PSG Talon": {
+      "kills": 10,
+      "deaths": 21,
+      "assists": 95
+    },
+    "Bong - Movistar R7": {
+      "kills": 5,
+      "deaths": 17,
+      "assists": 8
+    },
+    "Oddie - Movistar R7": {
+      "kills": 3,
+      "deaths": 12,
+      "assists": 14
+    },
+    "Mireu - Movistar R7": {
+      "kills": 9,
+      "deaths": 15,
+      "assists": 10
+    },
+    "Ceo - Movistar R7": {
+      "kills": 7,
+      "deaths": 14,
+      "assists": 11
+    },
+    "Lyonz - Movistar R7": {
+      "kills": 2,
+      "deaths": 15,
+      "assists": 14
+    },
+    "Robo - LOUD": {
+      "kills": 18,
+      "deaths": 27,
+      "assists": 23
+    },
+    "Croc - LOUD": {
+      "kills": 10,
+      "deaths": 30,
+      "assists": 30
+    },
+    "tinowns - LOUD": {
+      "kills": 10,
+      "deaths": 14,
+      "assists": 28
+    },
+    "Route - LOUD": {
+      "kills": 26,
+      "deaths": 13,
+      "assists": 22
+    },
+    "Ceos - LOUD": {
+      "kills": 3,
+      "deaths": 23,
+      "assists": 44
+    },
+    "Kiaya - GAM Esports": {
+      "kills": 35,
+      "deaths": 28,
+      "assists": 64
+    },
+    "Levi - GAM Esports": {
+      "kills": 28,
+      "deaths": 26,
+      "assists": 102
+    },
+    "Kati - GAM Esports": {
+      "kills": 36,
+      "deaths": 28,
+      "assists": 78
+    },
+    "Slayder - GAM Esports": {
+      "kills": 64,
+      "deaths": 17,
+      "assists": 47
+    },
+    "Palette - GAM Esports": {
+      "kills": 10,
+      "deaths": 20,
+      "assists": 118
+    },
+    "apaMEN - DetonatioN FocusMe": {
+      "kills": 1,
+      "deaths": 14,
+      "assists": 6
+    },
+    "Steal - DetonatioN FocusMe": {
+      "kills": 5,
+      "deaths": 17,
+      "assists": 12
+    },
+    "Aria - DetonatioN FocusMe": {
+      "kills": 11,
+      "deaths": 13,
+      "assists": 8
+    },
+    "Yutapon - DetonatioN FocusMe": {
+      "kills": 6,
+      "deaths": 10,
+      "assists": 12
+    },
+    "Harp - DetonatioN FocusMe": {
+      "kills": 0,
+      "deaths": 13,
+      "assists": 19
+    },
+    "Rest - CTBC Flying Oyster": {
+      "kills": 18,
+      "deaths": 15,
+      "assists": 32
+    },
+    "Gemini - CTBC Flying Oyster": {
+      "kills": 13,
+      "deaths": 18,
+      "assists": 65
+    },
+    "JimieN - CTBC Flying Oyster": {
+      "kills": 27,
+      "deaths": 16,
+      "assists": 45
+    },
+    "Shunn - CTBC Flying Oyster": {
+      "kills": 34,
+      "deaths": 17,
+      "assists": 40
+    },
+    "ShiauC - CTBC Flying Oyster": {
+      "kills": 7,
+      "deaths": 26,
+      "assists": 70
+    },
+    "Adam - Team BDS": {
+      "kills": 39,
+      "deaths": 29,
+      "assists": 53
+    },
+    "Sheo - Team BDS": {
+      "kills": 16,
+      "deaths": 22,
+      "assists": 107
+    },
+    "nuc - Team BDS": {
+      "kills": 48,
+      "deaths": 33,
+      "assists": 63
+    },
+    "Crownie - Team BDS": {
+      "kills": 56,
+      "deaths": 21,
+      "assists": 60
+    },
+    "Labrov - Team BDS": {
+      "kills": 3,
+      "deaths": 30,
+      "assists": 122
+    },
+    "Sparda - Team Whales": {
+      "kills": 23,
+      "deaths": 29,
+      "assists": 63
+    },
+    "BeanJ - Team Whales": {
+      "kills": 35,
+      "deaths": 34,
+      "assists": 63
+    },
+    "Glory - Team Whales": {
+      "kills": 32,
+      "deaths": 27,
+      "assists": 48
+    },
+    "Artemis - Team Whales": {
+      "kills": 37,
+      "deaths": 20,
+      "assists": 58
+    },
+    "Bie - Team Whales": {
+      "kills": 7,
+      "deaths": 24,
+      "assists": 90
+    }
+  },
+  "playerMostKills": {
+    "Azhi - PSG Talon": 5,
+    "JunJia - PSG Talon": 7,
+    "Maple - PSG Talon": 9,
+    "Wako - PSG Talon": 11,
+    "Woody - PSG Talon": 3,
+    "Bong - Movistar R7": 2,
+    "Oddie - Movistar R7": 2,
+    "Mireu - Movistar R7": 4,
+    "Ceo - Movistar R7": 3,
+    "Lyonz - Movistar R7": 1,
+    "Robo - LOUD": 8,
+    "Croc - LOUD": 3,
+    "tinowns - LOUD": 3,
+    "Route - LOUD": 11,
+    "Ceos - LOUD": 2,
+    "Kiaya - GAM Esports": 7,
+    "Levi - GAM Esports": 6,
+    "Kati - GAM Esports": 9,
+    "Slayder - GAM Esports": 11,
+    "Palette - GAM Esports": 5,
+    "apaMEN - DetonatioN FocusMe": 1,
+    "Steal - DetonatioN FocusMe": 3,
+    "Aria - DetonatioN FocusMe": 6,
+    "Yutapon - DetonatioN FocusMe": 3,
+    "Harp - DetonatioN FocusMe": 0,
+    "Rest - CTBC Flying Oyster": 6,
+    "Gemini - CTBC Flying Oyster": 5,
+    "JimieN - CTBC Flying Oyster": 10,
+    "Shunn - CTBC Flying Oyster": 8,
+    "ShiauC - CTBC Flying Oyster": 4,
+    "Adam - Team BDS": 8,
+    "Sheo - Team BDS": 5,
+    "nuc - Team BDS": 8,
+    "Crownie - Team BDS": 13,
+    "Labrov - Team BDS": 1,
+    "Sparda - Team Whales": 6,
+    "BeanJ - Team Whales": 9,
+    "Glory - Team Whales": 10,
+    "Artemis - Team Whales": 11,
+    "Bie - Team Whales": 3
+  },
+  "playerDiffChampions": {
+    "Azhi - PSG Talon": [
+      "Kennen",
+      "Rumble",
+      "Gnar",
+      "Jax"
+    ],
+    "JunJia - PSG Talon": [
+      "Jarvan IV",
+      "Maokai",
+      "Viego",
+      "Poppy"
+    ],
+    "Maple - PSG Talon": [
+      "Neeko",
+      "Jayce",
+      "LeBlanc",
+      "Akali",
+      "Sylas",
+      "Taliyah"
+    ],
+    "Wako - PSG Talon": [
+      "Xayah",
+      "Aphelios",
+      "Kai'Sa",
+      "Caitlyn"
+    ],
+    "Woody - PSG Talon": [
+      "Rakan",
+      "Rell",
+      "Alistar"
+    ],
+    "Bong - Movistar R7": [
+      "Renekton",
+      "K'Sante",
+      "Gwen"
+    ],
+    "Oddie - Movistar R7": [
+      "Viego",
+      "Sejuani",
+      "Jarvan IV",
+      "Lee Sin"
+    ],
+    "Mireu - Movistar R7": [
+      "Taliyah",
+      "Orianna",
+      "Sylas",
+      "Ahri"
+    ],
+    "Ceo - Movistar R7": [
+      "Ezreal",
+      "Xayah",
+      "Kai'Sa"
+    ],
+    "Lyonz - Movistar R7": [
+      "Nautilus",
+      "Rell",
+      "Rakan"
+    ],
+    "Robo - LOUD": [
+      "Renekton",
+      "K'Sante",
+      "Malphite",
+      "Aatrox",
+      "Olaf"
+    ],
+    "Croc - LOUD": [
+      "Viego",
+      "Nocturne",
+      "Sejuani",
+      "Kha'Zix",
+      "Lee Sin",
+      "Jarvan IV"
+    ],
+    "tinowns - LOUD": [
+      "Neeko",
+      "Orianna",
+      "Taliyah",
+      "Ahri"
+    ],
+    "Route - LOUD": [
+      "Kai'Sa",
+      "Xayah",
+      "Sivir"
+    ],
+    "Ceos - LOUD": [
+      "Rakan",
+      "Alistar",
+      "Nautilus"
+    ],
+    "Kiaya - GAM Esports": [
+      "Rumble",
+      "Renekton",
+      "K'Sante",
+      "Jax",
+      "Gnar"
+    ],
+    "Levi - GAM Esports": [
+      "Jarvan IV",
+      "Lee Sin",
+      "Wukong",
+      "Vi",
+      "Nocturne",
+      "Viego",
+      "Sejuani"
+    ],
+    "Kati - GAM Esports": [
+      "Orianna",
+      "Ahri",
+      "Syndra",
+      "Viktor",
+      "Jayce"
+    ],
+    "Slayder - GAM Esports": [
+      "Xayah",
+      "Kai'Sa"
+    ],
+    "Palette - GAM Esports": [
+      "Nautilus",
+      "Rell",
+      "Rakan",
+      "Leona",
+      "Sett"
+    ],
+    "apaMEN - DetonatioN FocusMe": [
+      "Aatrox",
+      "Poppy"
+    ],
+    "Steal - DetonatioN FocusMe": [
+      "Vi",
+      "Jarvan IV",
+      "Maokai",
+      "Ivern"
+    ],
+    "Aria - DetonatioN FocusMe": [
+      "Ahri",
+      "Akali",
+      "Syndra",
+      "Tristana"
+    ],
+    "Yutapon - DetonatioN FocusMe": [
+      "Senna",
+      "Xayah",
+      "Kai'Sa"
+    ],
+    "Harp - DetonatioN FocusMe": [
+      "Maokai",
+      "Rakan",
+      "Alistar",
+      "Blitzcrank"
+    ],
+    "Rest - CTBC Flying Oyster": [
+      "Rumble",
+      "Gnar",
+      "Gwen",
+      "Renekton",
+      "Aatrox"
+    ],
+    "Gemini - CTBC Flying Oyster": [
+      "Sejuani",
+      "Maokai",
+      "Lee Sin",
+      "Vi"
+    ],
+    "JimieN - CTBC Flying Oyster": [
+      "Jayce",
+      "Orianna",
+      "Ahri",
+      "Azir",
+      "Sylas"
+    ],
+    "Shunn - CTBC Flying Oyster": [
+      "Draven",
+      "Kai'Sa",
+      "Kalista",
+      "Xayah"
+    ],
+    "ShiauC - CTBC Flying Oyster": [
+      "Nautilus",
+      "Blitzcrank",
+      "Rell",
+      "Alistar"
+    ],
+    "Adam - Team BDS": [
+      "Darius",
+      "Renekton",
+      "Jax",
+      "Sett",
+      "Sion",
+      "Olaf",
+      "Garen"
+    ],
+    "Sheo - Team BDS": [
+      "Rell",
+      "Gragas",
+      "Ivern",
+      "Vi",
+      "Sejuani",
+      "Maokai",
+      "Taliyah"
+    ],
+    "nuc - Team BDS": [
+      "Syndra",
+      "Taliyah",
+      "Jayce",
+      "Cassiopeia",
+      "Azir",
+      "Tristana"
+    ],
+    "Crownie - Team BDS": [
+      "Ezreal",
+      "Xayah",
+      "Kalista",
+      "Zeri",
+      "Kai'Sa"
+    ],
+    "Labrov - Team BDS": [
+      "Alistar",
+      "Braum",
+      "Rakan",
+      "Taric",
+      "Nautilus"
+    ],
+    "Sparda - Team Whales": [
+      "Renekton",
+      "K'Sante",
+      "Aatrox",
+      "Malphite"
+    ],
+    "BeanJ - Team Whales": [
+      "Viego",
+      "Lee Sin",
+      "Jarvan IV"
+    ],
+    "Glory - Team Whales": [
+      "Neeko",
+      "Syndra",
+      "LeBlanc",
+      "Ahri",
+      "Orianna",
+      "Taliyah"
+    ],
+    "Artemis - Team Whales": [
+      "Kai'Sa",
+      "Xayah",
+      "Aphelios",
+      "Kalista"
+    ],
+    "Bie - Team Whales": [
+      "Rakan",
+      "Nautilus",
+      "Alistar",
+      "Rell"
+    ]
+  },
+  "playerFirstBlood": {
+    "Ceo - Movistar R7": 1,
+    "Woody - PSG Talon": 1,
+    "Ceos - LOUD": 1,
+    "Robo - LOUD": 2,
+    "JimieN - CTBC Flying Oyster": 1,
+    "Shunn - CTBC Flying Oyster": 3,
+    "Sheo - Team BDS": 1,
+    "BeanJ - Team Whales": 4,
+    "Artemis - Team Whales": 1,
+    "Azhi - PSG Talon": 2,
+    "Gemini - CTBC Flying Oyster": 1,
+    "Mireu - Movistar R7": 1,
+    "Oddie - Movistar R7": 1,
+    "Steal - DetonatioN FocusMe": 1,
+    "Yutapon - DetonatioN FocusMe": 1,
+    "Croc - LOUD": 1,
+    "tinowns - LOUD": 1,
+    "Crownie - Team BDS": 3,
+    "Palette - GAM Esports": 2,
+    "Labrov - Team BDS": 1,
+    "Maple - PSG Talon": 1
+  },
+  "teamFastGame": {
+    "PSG Talon": 1691,
+    "LOUD": 1634,
+    "CTBC Flying Oyster": 1658,
+    "Team BDS": 1428,
+    "Team Whales": 1650,
+    "GAM Esports": 1582
+  },
+  "teamLongGame": {
+    "PSG Talon": 2068,
+    "LOUD": 2376,
+    "CTBC Flying Oyster": 2040,
+    "Team BDS": 2634,
+    "Team Whales": 2469,
+    "GAM Esports": 2196
+  },
+  "teamDifferentChampions": {
+    "PSG Talon": [
+      "Kennen",
+      "Jarvan IV",
+      "Neeko",
+      "Xayah",
+      "Rakan",
+      "Rumble",
+      "Maokai",
+      "Jayce",
+      "Aphelios",
+      "Gnar",
+      "Rell",
+      "Viego",
+      "LeBlanc",
+      "Kai'Sa",
+      "Alistar",
+      "Jax",
+      "Poppy",
+      "Akali",
+      "Sylas",
+      "Caitlyn",
+      "Taliyah"
+    ],
+    "Movistar R7": [
+      "Renekton",
+      "Viego",
+      "Taliyah",
+      "Ezreal",
+      "Nautilus",
+      "K'Sante",
+      "Sejuani",
+      "Orianna",
+      "Xayah",
+      "Gwen",
+      "Jarvan IV",
+      "Sylas",
+      "Kai'Sa",
+      "Rell",
+      "Lee Sin",
+      "Ahri",
+      "Rakan"
+    ],
+    "LOUD": [
+      "Renekton",
+      "Viego",
+      "Neeko",
+      "Kai'Sa",
+      "Rakan",
+      "K'Sante",
+      "Nocturne",
+      "Orianna",
+      "Xayah",
+      "Sejuani",
+      "Taliyah",
+      "Sivir",
+      "Malphite",
+      "Kha'Zix",
+      "Alistar",
+      "Aatrox",
+      "Lee Sin",
+      "Ahri",
+      "Nautilus",
+      "Olaf",
+      "Jarvan IV"
+    ],
+    "GAM Esports": [
+      "Rumble",
+      "Jarvan IV",
+      "Orianna",
+      "Xayah",
+      "Nautilus",
+      "Renekton",
+      "Lee Sin",
+      "Ahri",
+      "Kai'Sa",
+      "Rell",
+      "K'Sante",
+      "Wukong",
+      "Syndra",
+      "Rakan",
+      "Jax",
+      "Vi",
+      "Nocturne",
+      "Viktor",
+      "Gnar",
+      "Viego",
+      "Leona",
+      "Sejuani",
+      "Jayce",
+      "Sett"
+    ],
+    "DetonatioN FocusMe": [
+      "Aatrox",
+      "Vi",
+      "Ahri",
+      "Senna",
+      "Maokai",
+      "Jarvan IV",
+      "Akali",
+      "Xayah",
+      "Rakan",
+      "Syndra",
+      "Kai'Sa",
+      "Alistar",
+      "Poppy",
+      "Ivern",
+      "Tristana",
+      "Blitzcrank"
+    ],
+    "CTBC Flying Oyster": [
+      "Rumble",
+      "Sejuani",
+      "Jayce",
+      "Draven",
+      "Nautilus",
+      "Maokai",
+      "Kai'Sa",
+      "Blitzcrank",
+      "Gnar",
+      "Orianna",
+      "Kalista",
+      "Rell",
+      "Gwen",
+      "Lee Sin",
+      "Ahri",
+      "Renekton",
+      "Vi",
+      "Azir",
+      "Xayah",
+      "Aatrox",
+      "Sylas",
+      "Alistar"
+    ],
+    "Team BDS": [
+      "Darius",
+      "Rell",
+      "Syndra",
+      "Ezreal",
+      "Alistar",
+      "Renekton",
+      "Taliyah",
+      "Braum",
+      "Gragas",
+      "Rakan",
+      "Ivern",
+      "Jayce",
+      "Xayah",
+      "Jax",
+      "Vi",
+      "Cassiopeia",
+      "Sett",
+      "Sejuani",
+      "Azir",
+      "Maokai",
+      "Kalista",
+      "Taric",
+      "Sion",
+      "Zeri",
+      "Nautilus",
+      "Olaf",
+      "Kai'Sa",
+      "Garen",
+      "Tristana"
+    ],
+    "Team Whales": [
+      "Renekton",
+      "Viego",
+      "Neeko",
+      "Kai'Sa",
+      "Rakan",
+      "K'Sante",
+      "Syndra",
+      "Nautilus",
+      "Lee Sin",
+      "LeBlanc",
+      "Xayah",
+      "Ahri",
+      "Aphelios",
+      "Alistar",
+      "Jarvan IV",
+      "Aatrox",
+      "Orianna",
+      "Taliyah",
+      "Rell",
+      "Malphite",
+      "Kalista"
+    ]
+  },
+  "reverseSweeps": [
+    {
+      "info": 1
+    }
+  ]
+}

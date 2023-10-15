@@ -20,6 +20,8 @@ import {
 } from "react-icons/gi";
 import {BsLinkedin, BsTwitch} from "react-icons/bs";
 import {TbRosetteNumber1, TbRosetteNumber2, TbRosetteNumber3} from "react-icons/tb";
+import {GrRevert} from "react-icons/gr";
+import {MdSettingsBackupRestore} from "react-icons/md";
 
 export default async function Home() {
 
@@ -317,6 +319,23 @@ export default async function Home() {
 
                             <div
                                 className="px-3 grid-cols-1 md:grid-cols-3 sm:grid-cols-1 lg:grid-cols-5 grid mt-10 gap-6">
+                                <div
+                                    className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all max-h-128 overflow-y-auto">
+                                    <div
+                                        className="flex justify-centclassNameems-center mb-3 w-14 h-14 rounded-full bg-primary-100 lg:h-12 lg:w-12 dark:bg-primary-900">
+                                        <MdSettingsBackupRestore className="w-14 h-14 text-white"/>
+                                    </div>
+                                    <h3 className="mb-2 text-xl fontclassName text-cyan-500 font-bold">Quantos Reverse Sweeps acontecerão no Mundial? (De um total de 11 MD5)</h3>
+
+                                    {data.reverseSweeps.map((item: any, index: any) => {
+                                        return (
+                                            <div key={index} className="last:border-0 border-b-2 border-gray-500 py-3">
+                                                <p className="text-white text-lg"><span
+                                                    className="font-bold text-cyan-500">Quantidade de Reverse Sweeps:</span> {item.info}</p>
+                                            </div>
+                                        );
+                                    })}
+                                </div>
                                 <div
                                     className="border-2 border-gray-500 p-4 bg-gray-900 hover:bg-gray-700 transition-all max-h-128 overflow-y-auto">
                                     <div

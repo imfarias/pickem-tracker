@@ -86,7 +86,12 @@ export async function GET() {
         playerFirstBlood,
         teamFastGame,
         teamLongGame,
-        teamDifferentChampions
+        teamDifferentChampions,
+        reverseSweeps: [
+            {
+                info: 1
+            }
+        ]
     }
 
     fs.writeFile("public/data.json", JSON.stringify(jsonSave), function (err) {
