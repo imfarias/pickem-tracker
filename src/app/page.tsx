@@ -2,6 +2,7 @@ import fs from "fs";
 import DataTreatment from "@/app/api/generate-json/data-treatment";
 import Image from "next/image";
 import moment from "moment";
+import 'moment/locale/pt-br';
 import {
     GiArcheryTarget,
     GiClockwork,
@@ -20,10 +21,11 @@ import {
 } from "react-icons/gi";
 import {BsLinkedin, BsTwitch} from "react-icons/bs";
 import {TbRosetteNumber1, TbRosetteNumber2, TbRosetteNumber3} from "react-icons/tb";
-import {GrRevert} from "react-icons/gr";
 import {MdSettingsBackupRestore} from "react-icons/md";
 
 export default async function Home() {
+
+    moment.locale('pt-br');
 
     let data: any = null;
 
@@ -309,7 +311,7 @@ export default async function Home() {
                                     ícone ao lado da pontuação no site para melhor identificação.
                                 </p>
                                 <p className="sm:classNamexl text-cyan-200">
-                                    Data da última atualização: {moment(data.lastGameAdded).format("DD/MM/YYYY")}
+                                    Último jogo registrado: {data.lastGameAdded.blue} x {data.lastGameAdded.red} - {moment(data.lastGameAdded.date).subtract(3, 'h').format("DD/MM/YYYY HH:mm:ss")}
                                 </p>
                             </div>
 

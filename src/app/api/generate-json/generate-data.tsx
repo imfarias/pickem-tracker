@@ -1,3 +1,5 @@
+import moment from "moment";
+
 export default class GenerateData {
 
 
@@ -120,10 +122,33 @@ export default class GenerateData {
         }
     }
 
-    public static generateLastGameAdded(item: any, dataList: Date) {
+    public static generateLastGameAdded(item: any, dataList: any) {
+        if(!dataList) {
+            dataList = {
+                date: new Date(item.date)
+            }
 
-        if (!dataList || dataList < new Date(item.date)) {
-            dataList = new Date(item.date);
+            if(item.side === 'Blue') {
+                dataList.blue = item.teamname;
+            } else if(item.side === 'Red') {
+                dataList.red = item.teamname;
+            }
+        }
+
+        if (!dataList.date || dataList.date < new Date(item.date)) {
+            dataList.date = new Date(item.date);
+
+            if(item.side === 'Blue') {
+                dataList.blue = item.teamname;
+            } else if(item.side === 'Red') {
+                dataList.red = item.teamname;
+            }
+        } else if(moment(dataList.date).isSame(moment(item.date))) {
+            if(item.side === 'Blue') {
+                dataList.blue = item.teamname;
+            } else if(item.side === 'Red') {
+                dataList.red = item.teamname;
+            }
         }
 
         return dataList;
