@@ -310,8 +310,8 @@ export default async function Home() {
                                     mais escolhido durante a Seleção de Campeões do Mundial?), essas seleções possuem um
                                     ícone ao lado da pontuação no site para melhor identificação.
                                 </p>
-                                <p className="sm:classNamexl text-cyan-200">
-                                    Último jogo registrado: {data.lastGameAdded.blue} x {data.lastGameAdded.red} - {moment(data.lastGameAdded.date).subtract(3, 'h').format("DD/MM/YYYY HH:mm:ss")}
+                                <p className="sm:classNamexl text-cyan-200 font-bold">
+                                    Último jogo registrado: <span className="font-normal text-white">{data.lastGameAdded.blue} x {data.lastGameAdded.red} - {moment(data.lastGameAdded.date).subtract(3, 'h').format("DD/MM/YYYY HH:mm:ss")}</span>
                                 </p>
                             </div>
 
