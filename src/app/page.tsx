@@ -540,6 +540,8 @@ export default async function Home() {
                                                             className="font-bold text-cyan-500">Campeão:</span> {item.name}
                                                         </p>
                                                         <p className="text-white text-lg"><span
+                                                            className="font-bold text-cyan-500">Quantidade de Jogos:</span> {item.wins + item.loses}</p>
+                                                        <p className="text-white text-lg"><span
                                                             className="font-bold text-cyan-500">Porcentagem de
                                                     winrate:</span> {item.winrate.toFixed(2)}%</p>
                                                     </div>
