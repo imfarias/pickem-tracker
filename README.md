@@ -4,11 +4,12 @@
 
 ## Acesso ao Sistema
 
-Para acessar o sistema de estatísticas do Campeonato Mundial de LoL 2023, clique no link abaixo:
+Finalizado devido ao final do mundial.
 
-[**Acesse o Sistema de Estatísticas do Worlds 2023**](https://pickem-tracker.vercel.app/)
-
-Certifique-se de ter seguido as instruções de instalação e que o servidor esteja em execução conforme mencionado no README para desfrutar das estatísticas em tempo real e informações detalhadas sobre o Campeonato Mundial de 2023.
+![image](https://github.com/imfarias/pickem-tracker/assets/31285984/dc748a89-b0ed-4085-8eaf-b7cfbda74474)
+![image](https://github.com/imfarias/pickem-tracker/assets/31285984/26e296b2-fd3b-4634-a1f8-8d6d0b1def03)
+![image](https://github.com/imfarias/pickem-tracker/assets/31285984/ee26bd9c-6665-4ca0-9839-37dd751f1839)
+![image](https://github.com/imfarias/pickem-tracker/assets/31285984/78102691-c6dc-46f2-a9e8-597920a4ee90)
 
 ## Visão Geral
 
