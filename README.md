@@ -2,14 +2,6 @@
 
 ![Logo](public/logo-blue.png)
 
-## Resultados finais obtidos pelo sistema
-
-Devido ao fim do mundial, desativamos o acesso para evitar consumos de recursos
-![image](https://github.com/imfarias/pickem-tracker/assets/31285984/dc748a89-b0ed-4085-8eaf-b7cfbda74474)
-![image](https://github.com/imfarias/pickem-tracker/assets/31285984/26e296b2-fd3b-4634-a1f8-8d6d0b1def03)
-![image](https://github.com/imfarias/pickem-tracker/assets/31285984/ee26bd9c-6665-4ca0-9839-37dd751f1839)
-![image](https://github.com/imfarias/pickem-tracker/assets/31285984/78102691-c6dc-46f2-a9e8-597920a4ee90)
-
 ## Visão Geral
 
 Bem-vindo ao Projeto de Estatísticas do Campeonato Mundial de 2023! Este projeto foi criado para fornecer estatísticas e informações atualizadas sobre o Campeonato Mundial de League of Legends (LoL) de 2023. Como um dos eventos de eSports mais prestigiados do mundo, este torneio reúne as melhores equipes de LoL de todo o mundo para competir pelo título máximo. Este README o guiará pelo projeto, seus objetivos e como usá-lo.
